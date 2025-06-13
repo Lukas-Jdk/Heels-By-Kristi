@@ -1,0 +1,26 @@
+
+.navBar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 13px;
+}
+
+.navBar ul a {
+  color: var(--white);
+  font-family: var(--font-heading);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navBar ul a:hover {
+  color: var(--orange);
+}
+
+@media (max-width: 1200px) {
+
+  .navBar {
+    display: none;
+  }
+
+}

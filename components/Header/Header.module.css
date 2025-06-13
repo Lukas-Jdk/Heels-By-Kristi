@@ -1,0 +1,24 @@
+.headerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+padding: 1rem 0rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+
+.left {
+display: flex;
+gap: 1rem;
+}
+
+
+}
