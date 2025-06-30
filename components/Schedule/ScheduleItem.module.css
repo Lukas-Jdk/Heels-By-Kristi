@@ -1,0 +1,35 @@
+.itemWrapper {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #ddd; /* ← šviesi linija */
+  width: 100%; /* ← svarbu, kad ištemptų iki krašto */
+  box-sizing: border-box;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem; /* arba 0.5rem */
+  font-size: 0.95rem;
+}
+
+.icon {
+  color: var(--orange);
+}
+
+.itemWrapper h2 {
+  font-size: 13px;
+  font-family: var(--font-primary);
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+
+}
+.rightSide h2 {
+  padding-left: 1.3rem;
+}
+.itemWrapper p{
+font-size: 0.8rem;
+font-family: var( --font-second);
+}

@@ -1,12 +1,15 @@
 
 .logo {
-  font-size: 3rem;
-  padding: 0 2rem;
+  display: flex;
+  align-items: center; /* Vertikaliai centruoja */
+ padding-top: 1rem;        /* Pašalina papildomą tarpą */
+  margin: 0;
+  height: 100px;       /* Sumažink jei reikia */
 }
+
 
 @media (max-width: 1200px) {
   .logo {
-  font-size: 2rem;
-  padding: 0 0.5rem;
+
 }
 }

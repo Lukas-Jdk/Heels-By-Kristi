@@ -1,0 +1,34 @@
+
+.select {
+  width: 100%;
+  border-radius: 15px;
+  padding: 0.7rem ;
+  border: 1px solid rgb(185, 184, 184);
+  margin: 1rem 0;
+}
+
+.buyButton {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 15px;
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+ 
+}
+
+.buyButton:hover {
+  background-color: white;
+  color: var(--orange);
+
+
+}
+
+.buyButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

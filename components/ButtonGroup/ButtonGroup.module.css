@@ -1,5 +1,6 @@
+
 .buttonGroup {
-  position: absolute;
+  position: relative;
   bottom: 250px;
   left: 0px;
   display: flex;
@@ -8,6 +9,7 @@
   font-weight: bold;
  padding: 0 2rem;
 }
+
 
 .buttonGroup a {
   text-decoration: none;
@@ -21,6 +23,7 @@ background-color: var(--orange);
 color: var(--white);
 border: 1px solid var(--orange);
 transition: 0.3s ease;
+font-family: var(--font-primary);
 }
 
 
@@ -35,6 +38,7 @@ border: 1px solid rgb(255, 255, 255);
 border-radius: 35px;
 color: white;
 transition: 0.3s ease;
+font-family: var(--font-primary);
 }
 
 .bookingBtn:hover {

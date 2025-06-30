@@ -4,13 +4,15 @@
   gap: 1.5rem;
   list-style: none;
   font-size: 13px;
+  padding-right: 2rem;
 }
 
 .navBar ul a {
   color: var(--white);
-  font-family: var(--font-heading);
+  font-family: var(--font-primary);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: 700;
 }
 
 .navBar ul a:hover {

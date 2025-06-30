@@ -1,0 +1,81 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;
+  color: #fff;
+  background: #000;      /* fallback, kol foto nera */
+}
+
+
+.full  { height: 100vh; }
+.medium{ height: 60vh;  }         
+
+/* ---- FONAS ---- */
+.bgVideo,
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* svarbu video */
+  background-size: cover; /* svarbu nuotraukai */
+  background-position: center;
+  z-index: 0;
+}
+
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2rem;        
+}
+
+/* ---- TEKSTO BLOKAS VIDUJE ---- */
+.content {
+  padding-top: 10rem;     
+}
+
+.content h1 {
+  font-family: var(--font-primary);
+  font-size: 3.5rem;
+  max-width: 580px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.content p {
+  font-family: var(--font-second);
+  font-size: 1.1rem;
+  padding-top: 1.5rem;
+  max-width: 580px;
+  line-height: 2;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 4rem;
+  
+  }
+  .content h1 {
+    font-size: 2.4rem;
+  }
+  .content p {
+    font-size: 1rem;
+    
+  }
+
+ 
+
+}

@@ -6,13 +6,17 @@
   padding-left: 1rem;
 }
 .burgerIcon {
-  font-size: 28px;
-  color: var(--orange);
+  font-size: 30px;
+  color: var(--white);
 }
 
 @media (max-width: 1200px) {
   .burger {
     display: block;
+
+    background-color: transparent;
+    z-index: 100;
+    padding-left: 2rem;
   }
 
   .open {
@@ -20,10 +24,6 @@
   }
 
   .burger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    z-index: 100;
+  
   }
 }

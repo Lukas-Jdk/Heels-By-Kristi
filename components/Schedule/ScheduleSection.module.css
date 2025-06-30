@@ -1,0 +1,14 @@
+
+.cityWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+@media (max-width: 768px) {
+  .cityWrapper {
+  
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
