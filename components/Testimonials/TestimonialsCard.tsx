@@ -18,7 +18,6 @@ const TestimonialCard = ({ text, name, role = "Student" }: Props) => {
           <span>{role}</span>
         </div>
       </div>
-     
     </div>
   );
 };

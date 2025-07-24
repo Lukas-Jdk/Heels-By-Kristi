@@ -11,7 +11,6 @@ const events = () => {
         subtitle="Our dance studio events"
         imageSrc="/media/heels1.jpg"
         imagePosition="center"
-        
       />
 
       <div className={styles.eventsCointainer}>

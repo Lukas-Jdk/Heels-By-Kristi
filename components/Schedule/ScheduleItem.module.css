@@ -3,15 +3,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid #ddd; /* ← šviesi linija */
-  width: 100%; /* ← svarbu, kad ištemptų iki krašto */
+  border-bottom: 1px solid #ddd; 
+  width: 100%; 
   box-sizing: border-box;
 }
 
 .iconText {
   display: flex;
   align-items: center;
-  gap: 0.4rem; /* arba 0.5rem */
+  gap: 0.4rem; 
   font-size: 0.95rem;
 }
 

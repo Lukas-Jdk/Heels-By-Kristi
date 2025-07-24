@@ -10,7 +10,6 @@ const HomeTestimonial = () => {
         <Unicode />
         <TestimonialsSimple />
       </div>
-
     </div>
   );
 };

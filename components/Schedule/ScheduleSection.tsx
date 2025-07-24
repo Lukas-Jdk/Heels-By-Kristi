@@ -1,7 +1,6 @@
 import styles from "./ScheduleSection.module.css";
 import ScheduleCity from "./ScheduleCity";
 
-
 const osloSchedule = [
   {
     day: "MONDAYS",
@@ -35,18 +34,22 @@ const drammenSchedule = [
   },
 ];
 
-
 const ScheduleSection = () => {
   return (
-      <div className={styles.container}>     
+    <div className={styles.container}>
       <div className={styles.cityWrapper}>
-      <ScheduleCity city="Oslo" schedule={[...osloSchedule, ...osloScheduleInter, ...osloScheduWednesdays]} />
-      <ScheduleCity city="Drammen" schedule={[...drammenSchedule]} />
+        <ScheduleCity
+          city="Oslo"
+          schedule={[
+            ...osloSchedule,
+            ...osloScheduleInter,
+            ...osloScheduWednesdays,
+          ]}
+        />
+        <ScheduleCity city="Drammen" schedule={[...drammenSchedule]} />
       </div>
-  
-      </div>
-  
-  )
-}
+    </div>
+  );
+};
 
 export default ScheduleSection;

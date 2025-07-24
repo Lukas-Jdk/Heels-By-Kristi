@@ -1,12 +1,11 @@
-
 export type PriceOption = {
-  label:string;
-  price:number;
-  stripePriceId:string;
+  label: string;
+  price: number;
+  stripePriceId: string;
 };
 
 export type City = {
-  name:"OSLO" | "DRAMMEN";
+  name: "OSLO" | "DRAMMEN";
   imageUrl: string;
-  options:PriceOption[];
-}
+  options: PriceOption[];
+};

@@ -1,5 +1,6 @@
 import styles from './ScheduleCity.module.css';
 import ScheduleItem from './ScheduleItem'
+import Image from 'next/image';
 
 type ScheduleItemData = {
   day: string;
@@ -17,7 +18,7 @@ const CitySchedule = ({city, schedule} : CityScheduleProps ) => {
    return (
     <div className={styles.cityWrapper}>
       <div className={styles.header}>
-        <img
+        <Image
           className={styles.image}
           src="https://img.pikbest.com/wp/202344/light-gray-background-design-abstract-grey-color-dark-black-and-with-old-wall-texture-of-cement-illuminated-by-white-gradient_9898524.jpg!w700wp"
           alt={`${city} Schedule`}

@@ -1,11 +1,12 @@
 import styles from "./AboutUs.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
     <div className={styles.aboutUsContainer}>
       <div className={styles.aboutUsImage}>
-        <img src="/media/30LR.jpg" alt="About Us" />
+        <Image src="/media/30LR.jpg" alt="About Us" />
       </div>
       <div className={styles.aboutUsInfo}>
         <h1>About Us</h1>

@@ -4,14 +4,14 @@ type Props = {
   title?: string;
   subtitle?: string;
   extraText?: string;
-  highlightWords?: number; 
+  highlightWords?: number;
 };
 
 const ProgramsDescription = ({
   title = "Programs for all levels and needs",
   subtitle,
   extraText,
-  highlightWords = 3, 
+  highlightWords = 3,
 }: Props) => {
   const words = title.split(" ");
   const highlighted = words.slice(0, highlightWords).join(" ");

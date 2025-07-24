@@ -1,7 +1,7 @@
 .programDescriptionContainer {
-display: flex;
-flex-direction: column;
-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .spanCollor {
@@ -20,7 +20,6 @@ gap: 2rem;
   font-family: var(--font-second);
   font-style: normal;
   font-weight: 300;
-
 }
 .programDescriptionContainer h4 {
   font-family: var(--font-second);

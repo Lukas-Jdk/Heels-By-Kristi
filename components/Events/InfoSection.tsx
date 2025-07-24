@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './InfoSection.module.css';
+import Image from 'next/image';
 
 interface InfoSectionProps {
   title: string;
@@ -19,7 +20,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({
   return (
     <div className={styles.sectionWrapper}>
       {isImageLeft && (
-        <img src={image} alt={title} className={styles.image} />
+        <Image src={image} alt={title} className={styles.image} />
       )}
 
       <div className={styles.textContent}>
@@ -28,7 +29,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({
       </div>
 
       {!isImageLeft && (
-        <img src={image} alt={title} className={styles.image} />
+        <Image src={image} alt={title} className={styles.image} />
       )}
     </div>
   );

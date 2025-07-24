@@ -2,18 +2,17 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { RateLimiterMemory } from "rate-limiter-flexible";
 import Stripe from "stripe";
 
-
 const rateLimiter = new RateLimiterMemory({
   points: 5,
   duration: 60,
 });
 
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {});
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-
-});
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
   }
@@ -23,7 +22,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     await rateLimiter.consume(ip as string);
   } catch {
-    return res.status(429).json({ error: "Too many requests – please try again later." });
+    return res
+      .status(429)
+      .json({ error: "Too many requests – please try again later." });
   }
 
   const { priceId } = req.body;
@@ -66,8 +67,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     return res.status(200).json({ url: session.url });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Stripe error:", err);
-    return res.status(500).json({ error: "Internal server error: " + err.message });
+    if (err instanceof Error) {
+      return res
+        .status(500)
+        .json({ error: "Internal server error: " + err.message });
+    }
+    return res.status(500).json({ error: "Unknown internal server error." });
   }
 }

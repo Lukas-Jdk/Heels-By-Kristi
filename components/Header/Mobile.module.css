@@ -64,7 +64,7 @@
     gap: 2rem;
   }
   .open {
-  transform: translateX(0);       /* įslysta į ekraną */
+  transform: translateX(0);       
 }
 
 }

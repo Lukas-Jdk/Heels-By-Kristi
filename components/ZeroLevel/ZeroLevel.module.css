@@ -40,7 +40,7 @@
   font-size: 1.2rem;
   font-weight: 400;
 }
-/* ----------------------------------------- */
+
 .zeroFocus {
   display: flex;
   flex-direction: column;
@@ -82,33 +82,31 @@
   letter-spacing: 1px;
 }
 .zeroBtn:hover {
-background-color: var(--white);
-color: var(--orange);
+  background-color: var(--white);
+  color: var(--orange);
 }
 .zeroFocus a {
   text-decoration: none;
 }
 
-
 @media (max-width: 768px) {
-  .zeroIntro h1{
+  .zeroIntro h1 {
     font-size: 2rem;
-  } 
-.zeroFocus h2  {
+  }
+  .zeroFocus h2 {
     font-size: 3rem;
-}
-.zeroIntro h2 { 
-  font-size: 1.2rem;
-}
-
+  }
+  .zeroIntro h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 460px) {
   .zeroIntro h1 {
-font-size: 2rem;
+    font-size: 2rem;
   }
 
-  .zeroFocus h2  {
+  .zeroFocus h2 {
     font-size: 2.5rem;
-}
+  }
 }

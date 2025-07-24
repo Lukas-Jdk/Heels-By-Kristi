@@ -1,5 +1,5 @@
 import styles from "./FooterInfo.module.css";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const FooterInfo = () => {
   return (

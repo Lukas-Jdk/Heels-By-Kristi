@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import TestimonialPreviewCard from "./TestimonialPreviewCard";
 import { testimonials } from "@/data/testimonials";
 import styles from "./TestimonialSimple.module.css";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // jei naudoji shadcn arba lucide
+import { ChevronLeft, ChevronRight } from "lucide-react"; 
 
 const TestimonialsSimple = () => {
   const [index, setIndex] = useState(0);

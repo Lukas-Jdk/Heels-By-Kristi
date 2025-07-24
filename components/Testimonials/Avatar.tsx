@@ -7,19 +7,14 @@ type Props = {
   size?: "small" | "large";
 };
 
-const Avatar = ({ 
-  src = "/media/avatar1.png", 
-  alt = "User avatar" ,
-  size = "large", 
+const Avatar = ({
+  src = "/media/avatar1.png",
+  alt = "User avatar",
+  size = "large",
 }: Props) => {
   return (
     <div className={`${styles.avatar} ${styles[size]}`}>
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className={styles.image}
-      />
+      <Image src={src} alt={alt} fill className={styles.image} />
     </div>
   );
 };

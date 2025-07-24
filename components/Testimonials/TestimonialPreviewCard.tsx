@@ -1,5 +1,4 @@
 import styles from "./TestimonialPreviewCard.module.css";
-import Avatar from "./Avatar";
 
 type Props = {
   text: string;
