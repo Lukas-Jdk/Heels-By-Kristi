@@ -1,0 +1,25 @@
+.burger {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.burgerIcon {
+  font-size: 30px;
+  color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .burger {
+    display: block;
+
+    background-color: transparent;
+    z-index: 100;
+    padding-left: 2rem;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+}

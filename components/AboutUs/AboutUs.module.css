@@ -1,0 +1,99 @@
+.aboutUsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+  margin-bottom:4rem;
+
+}
+
+.aboutUsImage {
+  padding: 0 2rem;
+}
+
+.aboutUsImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.aboutUsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.aboutUsInfo h1 {
+  font-family: var(--font-primary);
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 68px;
+}
+
+.aboutUsInfo p {
+  font-family: var(--font-second);
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 34px;
+  max-width: 575px;
+  text-align: left;
+}
+
+.aboutUsInfo h4 {
+  font-family: var(--font-second);
+  margin-top: 1.5rem;
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 575px;
+}
+
+
+.readMoreButton{
+  width: 150px;
+  padding: 0.95rem 1rem;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 2rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.readMoreButton:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+@media (max-width: 900px) {
+  .aboutUsContainer {
+    grid-template-columns: 1fr;
+  }
+  .aboutUsInfo h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  .aboutUsInfo p {
+    max-width: 100%;
+  }
+  .aboutUsInfo h4 {
+    max-width: 100%;
+  }
+  .readMoreButton {
+    margin-top: 2rem;
+  }
+
+  .aboutUsInfo {
+    padding: 0 4.5rem;
+  }
+}

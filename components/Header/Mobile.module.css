@@ -1,0 +1,70 @@
+
+.logo{
+   color: var(--white);
+   padding-bottom: 1rem;
+}
+
+.MobileNavBar {
+  display: none;
+  transition: transform 0.4s ease;
+}
+
+.MobileNavBar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 13px;
+}
+
+.MobileNavBar ul a {
+  color: var(--white);
+  font-family: var(--font-heading);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.MobileNavBar ul a:hover {
+  color: var(--orange);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color:  var(--orange);
+  font-size: 30px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+
+.MobileNavBar { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 320px;
+  background: var(--black);
+  padding: 2.8rem 2rem;
+  transform:  translateX(-100%);
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    z-index:100;
+}
+
+  .MobileNavBar ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .open {
+  transform: translateX(0);       /* įslysta į ekraną */
+}
+
+}

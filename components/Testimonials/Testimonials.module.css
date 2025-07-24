@@ -1,0 +1,21 @@
+.slider{
+margin-bottom: 2rem;
+}
+
+.dots {
+  max-width: 550px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+.dot.active {
+  background: var(--orange);
+}

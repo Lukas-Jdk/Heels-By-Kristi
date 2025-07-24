@@ -1,0 +1,25 @@
+.enrollPrice {
+  font-family: var(--font-primary);
+}
+.enrollPrice h2 {
+text-align: center;
+font-size: 2.35rem;
+font-weight: 600;
+
+}
+.enrollPrice h1 {
+font-size: 3.9rem;
+font-weight: 600;
+line-height: 63px;
+padding-bottom: 2rem;
+}
+
+
+@media (max-width: 510px) {
+.enrollPrice h1 {
+font-size: 2.8rem;
+}
+.enrollPrice h2 {
+  font-size: 1.8rem;
+}
+}

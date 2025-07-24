@@ -1,0 +1,67 @@
+.enrollInfoWrapper {
+  display: flex;
+gap: 2rem;
+  
+}
+
+.enrollDays {
+  font-family: var(--font-primary);
+  font-size: 0.85em;
+  text-align: center;
+  padding: 0 1rem;
+  color: var(--orange);
+}
+
+.iconCalandar {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.enrollTeacher {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 0.94em;
+  padding: 0 3rem;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.iconUser {
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+.enrollCity {
+  font-family: var(--font-primary);
+  font-size: 0.85em;
+  text-align: center;
+  padding: 0 1rem;
+  color: var(--orange);
+}
+
+.iconPin {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.enrollBtn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+@media (max-width: 510px) {
+.enrollInfoWrapper{
+  gap: 0rem;
+}
+}
+
+
+@media (max-width: 370px) {
+
+.enrollTeacher{
+  padding: 0 1.2rem;
+}
+
+}

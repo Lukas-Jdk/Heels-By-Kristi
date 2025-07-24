@@ -1,0 +1,56 @@
+
+.buttonGroup {
+  position: relative;
+  bottom: 400px;
+  left: 0px;
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+
+.buttonGroup a {
+  text-decoration: none;
+}
+
+.scheduleBtn {
+padding: 1.3rem 3.4rem;
+border-radius: 35px;
+border:none;
+background-color: var(--orange);
+color: var(--white);
+border: 1px solid var(--orange);
+transition: 0.3s ease;
+font-family: var(--font-primary);
+}
+
+
+.scheduleBtn:hover {
+background-color: transparent;
+}
+
+
+.bookingBtn {
+padding: 1.3em 2.5em;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 35px;
+color: white;
+transition: 0.3s ease;
+font-family: var(--font-primary);
+}
+
+.bookingBtn:hover {
+background-color: var(--white);
+color: var(--orange);
+}
+
+@media (max-width: 510px){
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 1rem;
+  }
+}

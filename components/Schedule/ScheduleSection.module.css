@@ -1,0 +1,17 @@
+
+.cityWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (max-width: 992px) {
+  .cityWrapper {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 3rem;
+  }
+    .cityWrapper > div {
+    width: 100%;
+  }
+}

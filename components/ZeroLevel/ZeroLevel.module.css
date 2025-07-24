@@ -1,0 +1,114 @@
+.zeroLevelWrapper {
+  background-color: var(--orange);
+}
+
+.zeroLevelContainer {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.zeroIntro {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  gap: 1rem;
+}
+
+.zeroIntro h1 {
+  font-size: 3.2rem;
+  color: var(--white);
+  font-family: var(--font-primary);
+}
+
+.zeroIntro h2 {
+  color: var(--black);
+  font-family: var(--font-primary);
+}
+
+.zeroIntro h3 {
+  font-family: var(--font-primary);
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.zeroIntro p {
+  font-family: var(--font-second);
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* ----------------------------------------- */
+.zeroFocus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.zeroFocus h2 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 3.3rem;
+  color: var(--white);
+}
+
+.zeroFocus ul {
+  list-style: none;
+  font-family: var(--font-primary);
+}
+.zeroFocus ul li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.zeroFocus p {
+  font-family: var(--font-second);
+  font-weight: 500;
+}
+.zeroBtn {
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
+  border: 1px solid var(--white);
+  border-radius: 35px;
+  color: white;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.zeroBtn:hover {
+background-color: var(--white);
+color: var(--orange);
+}
+.zeroFocus a {
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  .zeroIntro h1{
+    font-size: 2rem;
+  } 
+.zeroFocus h2  {
+    font-size: 3rem;
+}
+.zeroIntro h2 { 
+  font-size: 1.2rem;
+}
+
+}
+
+@media (max-width: 460px) {
+  .zeroIntro h1 {
+font-size: 2rem;
+  }
+
+  .zeroFocus h2  {
+    font-size: 2.5rem;
+}
+}

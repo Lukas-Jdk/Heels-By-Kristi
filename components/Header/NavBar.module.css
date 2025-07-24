@@ -1,0 +1,35 @@
+
+.navBar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 13px;
+  padding-right: 2rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+.navLight a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navDark a {
+  color: var(--black);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLight a:hover,
+.navDark a:hover {
+  color: var(--orange);
+}
+
+@media (max-width: 1200px) {
+
+  .navBar {
+    display: none;
+  }
+
+}

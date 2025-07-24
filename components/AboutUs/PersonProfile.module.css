@@ -1,0 +1,89 @@
+.profileContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.reverse .profileTextWrapper {
+  order: 2;
+}
+
+.reverse .imageWrapper {
+  order: 1;
+}
+
+.profileTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profileTitle {
+  color: var(--orange);
+  font-family: var(--font-primary);
+  font-size: 2.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profileDescription {
+  font-family: var(--font-second);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.profileEducation {
+  font-family: var(--font-second);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.profileProfDev {
+  font-family: var(--font-second);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileImg {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 778px) {
+  .profileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profileImg {
+    width: 100%;
+    max-width: 334px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0 0.5rem;
+  }
+
+  .reverse .profileTextWrapper {
+    order: 1;
+  }
+
+  .reverse .imageWrapper {
+    order: 2;
+  }
+}

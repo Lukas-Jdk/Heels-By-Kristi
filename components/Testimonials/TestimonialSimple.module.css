@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.slider {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.5);
+
+}

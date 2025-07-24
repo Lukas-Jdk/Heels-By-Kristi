@@ -1,0 +1,97 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;
+  color: #fff;
+  
+}
+.full {
+  height: 100vh;
+}
+.medium {
+  height: 60vh;
+}
+
+.small {
+ height: 10vh;
+}
+
+.noMedia {
+  background-color: #000;
+}
+
+ .hasOverlay{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bgVideo,
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2rem;        
+}
+
+
+.content {
+  padding-top: 10rem;     
+}
+
+.content h1 {
+  font-family: var(--font-primary);
+  font-size: 3.5rem;
+  max-width: 580px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 600;
+}
+
+.content p {
+  font-family: var(--font-second);
+  font-size: 1.1rem;
+  padding-top: 1.5rem;
+  max-width: 580px;
+  line-height: 2;
+  font-weight: 300;
+  margin: 0;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+.content h1 {
+    font-size: 2.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .content p {
+    font-size: 1rem;
+    
+  }
+
+}

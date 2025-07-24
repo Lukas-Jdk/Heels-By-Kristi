@@ -1,0 +1,26 @@
+.successWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.successWrapper h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-family: var(--font-primary);
+  color: var(--orange);
+}
+
+.successWrapper p {
+  font-size: 1.5rem;
+  font-family: var(--font-second);
+  padding-bottom: 0.5rem;
+}
+
+.successWrapper h3 {
+    font-size: 1.2rem;
+  font-family: var(--font-second);
+  font-weight: 400;
+}

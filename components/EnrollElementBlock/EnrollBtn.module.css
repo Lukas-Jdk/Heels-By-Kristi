@@ -1,0 +1,21 @@
+.enrollBtn {
+  background-color: var(--orange);
+  color: white;
+  font-weight: 600;
+  padding: 0.9rem 3.8rem;
+  border-radius: 40px;
+  border: 1px solid var(--orange);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  margin-top: 2rem;
+  cursor: pointer;
+ 
+}
+.btnWrapper{
+  padding-top:2rem;
+  
+}
+.enrollBtn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}

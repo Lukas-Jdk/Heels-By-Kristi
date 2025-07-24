@@ -1,0 +1,23 @@
+.container {
+  max-width: 1250px;
+  margin: auto;
+  height: 100vh;
+  padding: 2rem;
+ 
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.info {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.text {
+  color: var(--white);
+  font-family: var(--font-second);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 33.5px;
+}
+
+.info{
+  max-width: 90px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.info h3 {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 14.4px;
+}
+
+.info p {
+  font-family: var(--font-second);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 28.5px;
+}
