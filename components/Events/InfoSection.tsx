@@ -20,7 +20,16 @@ const InfoSection: React.FC<InfoSectionProps> = ({
   return (
     <div className={styles.sectionWrapper}>
       {isImageLeft && (
-        <Image src={image} alt={title} className={styles.image} />
+        <div className={styles.imageWrapper}>
+          <Image
+            src={image}
+            alt={title}
+            width={600} 
+            
+            height={400}
+            className={styles.image}
+          />
+        </div>
       )}
 
       <div className={styles.textContent}>
@@ -29,7 +38,15 @@ const InfoSection: React.FC<InfoSectionProps> = ({
       </div>
 
       {!isImageLeft && (
-        <Image src={image} alt={title} className={styles.image} />
+        <div className={styles.imageWrapper}>
+          <Image
+            src={image}
+            alt={title}
+            width={580} 
+            height={400}
+            className={styles.image}
+          />
+        </div>
       )}
     </div>
   );

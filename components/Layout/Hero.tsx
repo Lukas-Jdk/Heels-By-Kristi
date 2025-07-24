@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import classNames from "classnames";
 import Image from "next/image";
+import React from "react";
 
 type Props = {
   title: string;
@@ -21,27 +22,33 @@ const Hero = ({
   height = "medium",
   overlay = true,
   quality = 100,
-  imagePosition="top"
+  imagePosition = "center",
 }: Props) => {
   const heroClass = classNames(styles.hero, {
     [styles.full]: height === "full",
     [styles.medium]: height === "medium",
     [styles.small]: height === "small",
-    [styles.noMedia]: !videoSrc && !imageSrc
-    
+    [styles.noMedia]: !videoSrc && !imageSrc,
   });
 
   return (
     <section className={heroClass}>
-      {/* Video background */}
+      {/* MP4 Video */}
       {videoSrc && (
-        <video className={styles.bgVideo} autoPlay muted loop playsInline>
+        <video
+          className={styles.bgVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       )}
 
-      {/* Image background */}
+      {/* Fallback Image (jei videoSrc nėra) */}
       {!videoSrc && imageSrc && (
         <Image
           src={imageSrc}
@@ -50,11 +57,11 @@ const Hero = ({
           quality={quality}
           priority
           className={styles.bgImage}
-          style={{ objectPosition: imagePosition || "center" }}
+          style={{ objectPosition: imagePosition }}
         />
       )}
 
-      {/* Optional overlay */}
+      {/* Overlay */}
       {overlay && <div className={styles.hasOverlay} />}
 
       {/* Content */}

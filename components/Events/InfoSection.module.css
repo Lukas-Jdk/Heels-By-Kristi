@@ -7,16 +7,13 @@ padding: 2rem 0;
 }
 
 .image{
-  width: 100%;
   height: auto;
   max-width: 600px;
   max-height: 386px;
   object-fit: cover;
 }
 
-.textContent {
 
-}
 
 .title {
 font-family: var(--font-primary);

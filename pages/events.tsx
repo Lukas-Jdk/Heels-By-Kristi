@@ -9,14 +9,14 @@ const events = () => {
       <Hero
         title="Events"
         subtitle="Our dance studio events"
-        imageSrc="/media/heels1.jpg"
+        imageSrc="/media/Heels1.jpg"
         imagePosition="center"
       />
 
       <div className={styles.eventsCointainer}>
         <InfoSection
           title="Bachelorette party"
-          image="/media/heels2.jpg"
+          image="/media/Heels8.jpg"
           imagePosition="left"
           text={
             <>
@@ -47,7 +47,7 @@ const events = () => {
 
         <InfoSection
           title="Private class"
-          image="/media/heels2.jpg"
+          image="/media/Heels8.jpg"
           imagePosition="right"
           text={
             <>
@@ -74,7 +74,7 @@ const events = () => {
         />
         <InfoSection
           title="Girls Time dance class"
-          image="/media/heels2.jpg"
+          image="/media/Heels8.jpg"
           imagePosition="left"
           text={
             <>

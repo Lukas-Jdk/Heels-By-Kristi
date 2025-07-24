@@ -5,7 +5,6 @@ import ClassSection from "../components/ClassCardSection/ClassSection";
 import Layout from "../components/Layout/Layout";
 import AboutUs from "@/components/AboutUs/AboutUs";
 import EnrrollElementBlock from "@/components/EnrollElementBlock/EnrrollElementBlock";
-
 import ZeroLevel from "@/components/ZeroLevel/ZeroLevel";
 
 const HomePage = () => {
@@ -13,7 +12,7 @@ const HomePage = () => {
     <Layout>
       <Hero
         title=""
-        videoSrc="/media/video1.mp4"
+        videoSrc="https://dsetvtfv9d80au5p.public.blob.vercel-storage.com/video1.mp4"
         height="full"
         overlay={false}
       />
@@ -27,4 +26,5 @@ const HomePage = () => {
     </Layout>
   );
 };
+
 export default HomePage;
