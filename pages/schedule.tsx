@@ -13,6 +13,7 @@ const SchedulePage = () => {
         title="Schedule"
         imageSrc="/media/20LR.jpg"
         imagePosition="center 20%"
+        priority
         subtitle="Create a memorable experience with our dance program, led by the talented Heels by Kristi."
       />
       <div className={styles.container}>

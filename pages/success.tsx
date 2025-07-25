@@ -17,6 +17,7 @@ const SuccessPage = () => {
       <Hero 
       title=""
       height="small"
+      priority
       />
       <div className={styles.successWrapper}>
         <h1>Thank you for your purchase! </h1>

@@ -6,7 +6,7 @@ import Link from "next/link";
 const CancelPage = () => {
   return (
     <Layout>
-      <Hero title="" height="small" />
+      <Hero title="" height="small" priority/>
       <div className={styles.cancelWrapper}>
         <h1>Payment was cancelled </h1>
         <p>You can try again at any time.</p>

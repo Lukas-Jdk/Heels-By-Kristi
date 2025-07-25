@@ -13,6 +13,7 @@ const about = () => {
         imageSrc="/media/20LR.jpg"
         imagePosition="center 20%"
         title="About Heels By Kristi"
+        priority
         subtitle="Heels by Kristi studio is a high heels dance studio based in
        Oslo. Heels by Kristi was born in Norway in 2019 and has had more than
         200 talented students. You will find this studio full of love, 

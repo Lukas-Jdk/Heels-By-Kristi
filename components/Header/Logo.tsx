@@ -17,10 +17,10 @@ const Logo: React.FC<LogoProps> = ({ variant, scrolled }) => {
         <Image
           src={src}
           alt="Heels By Kristi Logo"
-          width={150}
-          height={100}
+          width={180}
+          height={120}
           priority
-          style={{ width: "auto", height: "auto" }} 
+           style={{ objectFit: "cover" }}
         />
       </Link>
     </div>

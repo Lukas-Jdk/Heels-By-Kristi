@@ -11,6 +11,7 @@ export default function PolicyPage() {
         imageSrc="/media/contacts.jpg"
         imagePosition="center 70%"
         height="medium"
+        priority
       />
        <Head>
         <title>Studio Policy | Heels by Kristi</title>

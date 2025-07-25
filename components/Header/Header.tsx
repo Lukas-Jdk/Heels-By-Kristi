@@ -23,9 +23,7 @@ const Header: React.FC = () => {
         <div className={styles.header}>
           <div className={styles.left}>
      <BurgerButton onClick={() => setMenuOpen(true)} color={scrolled ? "black" : "white"} />
-            <Logo variant={scrolled ? "dark" : "light"}
-             scrolled={scrolled} 
-            />
+            <Logo variant={scrolled ? "dark" : "light"} scrolled={scrolled} />
           </div>
 
           <NavBar variant={scrolled ? "dark" : "light"} />

@@ -14,6 +14,7 @@ const HomePage = () => {
         title=""
         videoSrc="https://dsetvtfv9d80au5p.public.blob.vercel-storage.com/video1.mp4"
         height="full"
+        priority
         overlay={false}
       />
       <div className={styles.container}>

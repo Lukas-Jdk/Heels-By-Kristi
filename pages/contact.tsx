@@ -11,6 +11,7 @@ const contanct = () => {
         title="Contact Us"
         imageSrc="/media/contacts.jpg"
         imagePosition="center 70%"
+        priority
         subtitle="You can reach us via the contact form, e-mail or the telephone number provided on our website. We look forward to hearing from you soon."
       />
       <div className={styles.container}>

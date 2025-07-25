@@ -60,6 +60,7 @@ const BookingPage = () => {
         imageSrc="/media/Heels.jpg"
         imagePosition="center"
         quality={100}
+        priority
       
       />
 

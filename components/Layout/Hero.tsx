@@ -12,6 +12,8 @@ type Props = {
   overlay?: boolean;
   quality?: number;
   imagePosition?: string;
+   priority?: boolean;
+   
 };
 
 const Hero = ({
@@ -23,6 +25,7 @@ const Hero = ({
   overlay = true,
   quality = 100,
   imagePosition = "center",
+  priority = false,
 }: Props) => {
   const heroClass = classNames(styles.hero, {
     [styles.full]: height === "full",
@@ -55,7 +58,7 @@ const Hero = ({
           alt="Hero background"
           fill
           quality={quality}
-          priority
+          priority={priority}
           className={styles.bgImage}
           style={{ objectPosition: imagePosition }}
         />
