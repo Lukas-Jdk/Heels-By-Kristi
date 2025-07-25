@@ -20,3 +20,11 @@
   gap: 5rem;
   position: relative;
 }
+@media (max-width: 992px) {
+  .testimonialCard {
+
+   display: grid;
+  grid-template-columns: 1fr;
+  }
+  
+}

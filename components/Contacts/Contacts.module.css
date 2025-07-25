@@ -5,12 +5,14 @@
   padding: 2rem;
   align-items: start;
   position: relative;
+
 }
 
 .contactInfo {
   font-family: var(--font-second);
   font-size: 15px;
   line-height: 1.7;
+  
 }
 
 
