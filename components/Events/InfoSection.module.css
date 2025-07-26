@@ -6,7 +6,9 @@
   align-items: center;
   padding: 2rem 0;
 }
-
+.reverse {
+  flex-direction: row-reverse;
+}
 .image {
   object-fit: cover;
 }

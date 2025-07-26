@@ -1,11 +1,11 @@
-.footerInfo {
+.footerSocial {
   color: var(--orange);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.footerInfo h2 {
+.footerSocial h2 {
   font-family: var(--font-primary);
   font-size: 23px;
   font-weight: 600;
@@ -51,8 +51,9 @@
 }
 
 @media (max-width: 550px) {
-  .footerInfo h2 {
-      font-size: 16px;
+  .footerSocial h2 {
+    font-size: 16px;
   }
+ 
 
 }

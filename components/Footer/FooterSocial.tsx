@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const FooterSocial = () => {
   return (
-    <div className={styles.footerInfo}>
+    <div className={styles.footerSocial}>
       <h2>Follow us</h2>
       <nav>
         <ul className={styles.socialList}>

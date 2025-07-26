@@ -16,7 +16,7 @@ const Logo: React.FC<LogoProps> = ({ variant, scrolled }) => {
       <Link href="/">
         <Image
           src={src}
-          alt="Heels By Kristi Logo"
+          alt="Heels By Kristi homepage logo"
           width={180}
           height={120}
           priority

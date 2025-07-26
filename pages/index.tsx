@@ -4,7 +4,7 @@ import ButtonGroup from "../components/ButtonGroup/ButtonGroup";
 import ClassSection from "../components/ClassCardSection/ClassSection";
 import Layout from "../components/Layout/Layout";
 import AboutUs from "@/components/AboutUs/AboutUs";
-import EnrrollElementBlock from "@/components/EnrollElementBlock/EnrrollElementBlock";
+import EnrrollElementBlock from "@/components/EnrollElementBlock/EnrollElementBlock";
 import ZeroLevel from "@/components/ZeroLevel/ZeroLevel";
 
 const HomePage = () => {

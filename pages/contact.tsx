@@ -4,7 +4,7 @@ import styles from "../styles/contact.module.css";
 import Hero from "../components/Layout/Hero";
 import Contacts from "../components/Contacts/Contacts";
 
-const contanct = () => {
+const Contact  = () => {
   return (
     <Layout>
       <Hero
@@ -12,7 +12,8 @@ const contanct = () => {
         imageSrc="/media/contacts.jpg"
         imagePosition="center 70%"
         priority
-        subtitle="You can reach us via the contact form, e-mail or the telephone number provided on our website. We look forward to hearing from you soon."
+        subtitle="You can reach us via the contact form, e-mail or the telephone number 
+        provided on our website. We look forward to hearing from you soon."
       />
       <div className={styles.container}>
         <Contacts />
@@ -21,4 +22,4 @@ const contanct = () => {
   );
 };
 
-export default contanct;
+export default Contact ;

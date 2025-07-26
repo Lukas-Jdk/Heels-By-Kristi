@@ -3,14 +3,14 @@ import Layout from "@/components/Layout/Layout";
 import Hero from "@/components/Layout/Hero";
 import InfoSection from "@/components/Events/InfoSection";
 
-const events = () => {
+const Events = () => {
   return (
     <Layout>
       <Hero
         title="Events"
         subtitle="Our dance studio events"
         imageSrc="/media/Heels1.jpg"
-        imagePosition="center"
+        imagePosition="left"
         priority
       />
 
@@ -18,17 +18,16 @@ const events = () => {
         <InfoSection
           title="Bachelorette party"
           image="/media/Heels8.jpg"
-          imagePosition="left"
+          imagePosition="right"
           text={
             <>
               <p>
                 High Heels class is the perfect way to celebrate your special
-                day! Heels by Kristi teachers will teach you speacial
-                choregraphy which can be performed by all Bride team. Bride will
-                be get special attention during the dance class and routine. You
+                day! Heels by Kristi teachers will teach you special choreography which can be performed by all Bride team. 
+                The bride will receive special attention during the dance class and routine. You
                 will start with small warm up, later all participants will learn
-                not diffiucult and sexy choreography which you will perform in
-                the end of the class. You will have possibility to record you
+                not difficult and sexy choreography which you will perform in
+                the end of the class. You will have possibility to record your
                 class and take time for photos.
               </p>
 
@@ -49,7 +48,7 @@ const events = () => {
         <InfoSection
           title="Private class"
           image="/media/Heels8.jpg"
-          imagePosition="right"
+          imagePosition="left"
           text={
             <>
               <p>
@@ -76,7 +75,7 @@ const events = () => {
         <InfoSection
           title="Girls Time dance class"
           image="/media/Heels8.jpg"
-          imagePosition="left"
+          imagePosition="right"
           text={
             <>
               <p>
@@ -107,4 +106,4 @@ const events = () => {
   );
 };
 
-export default events;
+export default Events;

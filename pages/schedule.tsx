@@ -32,7 +32,7 @@ const SchedulePage = () => {
           instructor="Kristina"
         />
         <ClassDescription
-          id="basic-beginners-description"
+          id="zero-level-description"
           align="right"
           title="Zero Level Beginners"
           description="Perfect for first-timers and experienced dancers alike, this class focuses on the foundational techniques of heels dance. We’ll break down posture, walks, balance, and movement quality to build confidence and control. Whether you’re just starting out or refining your skills, this class is essential for mastering the basics and building a strong technical base."

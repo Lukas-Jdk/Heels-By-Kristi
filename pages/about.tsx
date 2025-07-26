@@ -6,7 +6,7 @@ import Contacts from "../components/Contacts/Contacts";
 import Layout from "../components/Layout/Layout";
 import ProgramsDescription from "@/components/Testimonials/ProgramsDescription";
 
-const about = () => {
+const About = () => {
   return (
     <Layout>
       <Hero
@@ -34,7 +34,7 @@ const about = () => {
           description={`My biggest passion in life has always been dancing. It has always remained in my life – from being in a girl dance group throughout school years, having a possibility to work as a performer, and now embarking on my journey as a high heels dancer. I couldn’t be more excited to be teaching at Heels by Kristi and have other passionate souls dance with me!`}
           imageUrl="/media/Aistee.jpg"
           reverse={true}
-          education=""
+        
           profDev="Malou Linders, Cisco Ruelas, Elisa Bei, Kuba Walica, Sharon June, Blake John Wood and others."
         />
 
@@ -53,4 +53,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

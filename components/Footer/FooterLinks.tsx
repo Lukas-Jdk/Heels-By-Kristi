@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const FooterLinks = () => {
   return (
-    <div className={styles.footerInfo}>
+    <div className={styles.footerLinks}>
         <h2>Links</h2>
         <nav>
            <ul>

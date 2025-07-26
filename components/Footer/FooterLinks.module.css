@@ -1,4 +1,4 @@
-.footerInfo {
+.footerLinks {
   color: var(--orange);
   display: flex;
   flex-direction: column;
@@ -6,23 +6,23 @@
 
 }
 
-.footerInfo h2 {
+.footerLinks h2 {
   font-family: var(--font-primary);
   font-size: 23px;
   font-weight: 600;
 }
 
-.footerInfo nav ul {
+.footerLinks nav ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.footerInfo nav ul li {
+.footerLinks nav ul li {
   list-style: none;
 }
 
-.footerInfo nav ul li a {
+.footerLinks nav ul li a {
 color: var(--white);
 text-decoration: none;
 font-family: var(--font-second);
@@ -30,13 +30,17 @@ font-size: 13.5px;
 cursor: pointer;
 }
 
-.footerInfo nav ul li a:hover { 
+.footerLinks nav ul li a:hover { 
   color: var(--orange);
 }
 
 @media (max-width: 550px) {
-  .footerInfo h2 {
-      font-size: 16px;
+  .footerLinks h2 {
+    font-size: 16px;
   }
 
+  .footerLinks nav ul li a {
+    font-size: 12px;
+    max-width: 103px;
+  }
 }
