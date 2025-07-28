@@ -9,8 +9,8 @@ const Events = () => {
       <Hero
         title="Events"
         subtitle="Our dance studio events"
-        imageSrc="/media/Heels1.jpg"
-        imagePosition="left"
+        imageSrc="/media/17LR.jpg"
+      imagePosition="center 30%"
         priority
       />
 
