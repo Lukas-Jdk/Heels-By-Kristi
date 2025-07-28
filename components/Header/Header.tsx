@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import Logo from "./Logo";
 import BurgerButton from "./BurgerButton";
-import MobileMenu from "./MobileMenu";
 import NavBar from "./NavBar";
 import classNames from "classnames";
 
@@ -33,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen }) => {
         <div className={styles.header}>
           <div className={styles.left}>
             <BurgerButton
-              onClick={() => setMenuOpen(true)}
+              onClick={() => setMenuOpen(!menuOpen)}
               color={scrolled ? "black" : "white"}
               aria-label="Open navigation menu"
             />
@@ -41,11 +40,6 @@ const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <NavBar variant={scrolled ? "dark" : "light"} />
-
-          {/* Čia naudok animuoto uždarymo funkciją */}
-          {menuOpen && (
-            <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-          )}
         </div>
       </div>
     </header>
