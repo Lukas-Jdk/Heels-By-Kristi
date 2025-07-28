@@ -12,7 +12,7 @@ const HomePage = () => {
     <Layout>
       <Hero
         title=""
-        videoSrc="https://dsetvtfv9d80au5p.public.blob.vercel-storage.com/video1.mp4"
+        videoSrc="/media/video.mp4"
         height="full"
         priority
         overlay={false}

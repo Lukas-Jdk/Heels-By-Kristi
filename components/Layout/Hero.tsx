@@ -44,7 +44,7 @@ const Hero = ({
           muted
           loop
           playsInline
-          preload="auto"
+          preload="none"
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
