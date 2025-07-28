@@ -28,7 +28,11 @@ const Gallery = () => {
 
   return (
     <Layout>
-      <Hero title="Gallery" height="small" />
+      <Hero 
+      title="Gallery" 
+      height="small" 
+     
+      />
       <section className={styles.gallery}>
         {images.map((src, index) => (
           <div

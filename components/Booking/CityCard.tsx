@@ -8,20 +8,20 @@ type Props = { city: City};
 const CityCard = ({city}: Props) => (
 
   <article className={styles.card}>
-    <div className={styles.imageWrap}>
-      <Image 
+     <div className={styles.imageWrap}>
+    <Image 
       src={city.imageUrl} 
-      alt= {city.name} 
-      layout="fill" 
-      objectFit="cover" 
-     
-      />
-      
-    </div>
-    <div className={styles.cardBody}>
-      <h2 className={styles.title}>{city.name}</h2>
-      <OptionSelect options= {city.options} />
-    </div>
+      alt={city.name} 
+      fill 
+      className={styles.image}
+      priority
+    />
+    <h2 className={styles.city}>{city.name}</h2>
+  </div>
+
+  <div className={styles.cardBody}>
+    <OptionSelect options={city.options} />
+  </div>
   </article>
 );
 

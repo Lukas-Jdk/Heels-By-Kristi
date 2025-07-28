@@ -1,10 +1,20 @@
-
 .select {
   width: 100%;
   border-radius: 15px;
-  padding: 0.7rem ;
+  padding: 0.6rem;
   border: 1px solid rgb(185, 184, 184);
-  margin: 1rem 0;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--orange);
 }
 
 .buyButton {
@@ -17,15 +27,12 @@
   transition: 0.3s ease-in-out;
   font-weight: bold;
   font-family: var(--font-primary);
-  font-size: 0.8rem;
- 
+  font-size: 0.9rem;
 }
 
 .buyButton:hover {
   background-color: white;
   color: var(--orange);
-
-
 }
 
 .buyButton:disabled {
