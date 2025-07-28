@@ -12,7 +12,7 @@ const HomePage = () => {
     <Layout>
       <Hero
         title=""
-        videoSrc="/media/video.mp4"
+        videoSrc="/media/Video.mp4"
         height="full"
         priority
         overlay={false}
