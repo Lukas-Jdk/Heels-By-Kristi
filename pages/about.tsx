@@ -11,7 +11,7 @@ const About = () => {
     <Layout>
       <Hero
         imageSrc="/media/20LR.jpg"
-        imagePosition="center 20%"
+        imagePosition="center 30%"
         title="About Heels By Kristi"
         priority
         subtitle="Heels by Kristi studio is a high heels dance studio based in
@@ -38,14 +38,7 @@ const About = () => {
           profDev="Malou Linders, Cisco Ruelas, Elisa Bei, Kuba Walica, Sharon June, Blake John Wood and others."
         />
 
-        <div className={styles.testimonialCard}>
-          <Testimonials />
-          <ProgramsDescription
-            title="HeelsBy Kristi"
-            highlightWords={1}
-            subtitle="Heels by Kristi studio is a high heels dance studio based in Oslo. Heels by Kristi was born in Norway in 2019 and has had more than 200 talented students. You will find this studio full of love, support and respect for each other. You don't believe you can dance? Just let us change your mind!"
-          />
-        </div>
+   
 
         <Contacts />
       </div>

@@ -67,8 +67,9 @@
 }
 
 .zeroFocus p {
-  font-family: var(--font-second);
+  font-family: var(--font-primary);
   font-weight: 500;
+  padding-top: 1rem;
 }
 .zeroBtn {
   margin-top: 2rem;
@@ -99,6 +100,10 @@
   .zeroIntro h2 {
     font-size: 1.2rem;
   }
+.zeroFocus {
+  align-items: flex-start;
+}
+  
 }
 
 @media (max-width: 460px) {
@@ -108,5 +113,6 @@
 
   .zeroFocus h2 {
     font-size: 2.5rem;
+    
   }
 }

@@ -12,7 +12,7 @@ const SchedulePage = () => {
       <Hero
         title="Schedule"
         imageSrc="/media/20LR.jpg"
-        imagePosition="center 20%"
+        imagePosition="center 30%"
         priority
         subtitle="Create a memorable experience with our dance program, led by the talented Heels by Kristi."
       />
@@ -36,10 +36,10 @@ const SchedulePage = () => {
           align="right"
           title="Zero Level Beginners"
           description="Perfect for first-timers and experienced dancers alike, this class focuses on the foundational techniques of heels dance. We’ll break down posture, walks, balance, and movement quality to build confidence and control. Whether you’re just starting out or refining your skills, this class is essential for mastering the basics and building a strong technical base."
-          instructor="Kristina, Aiste"
+          instructor="Kristina"
         />
          <div className={styles.testimonialCard}>
-          <Testimonials />
+          
           <ProgramsDescription 
           subtitle="The dance studio Heels by Kristi offers exclusive dance training only for women aged 18 or older. With a focus on quality and development of dance skills, this is the perfect place for women who want to develop as dancers."
           extraText="You can get to know the girls in our section close. For our home to live, we need each and every one of you. With his attitude, energy and love of dance. Join our community."

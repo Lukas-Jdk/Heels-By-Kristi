@@ -12,27 +12,23 @@ const cities: City[] = [
       {
         label: "Basic Beginner Drop-in",
         price: 300,
-        stripePriceId: "price_1Ro1VZHsJm7V7w1Y9mDtU5pu",
+        stripePriceId: "price_1Ro0sOHsJm7V7w1Yy4RZ71bp",
       },
       {
         label: "Zero Level Beginners  Drop-in",
         price: 300,
-        stripePriceId: "price_oslo_zero",
+        stripePriceId: "price_1RqxIoHsJm7V7w1YmfTZyNfB",
       },
       {
         label: "Intermediate Beginners Drop-in",
         price: 300,
-        stripePriceId: "price_oslo_inter",
-      },
-        {
-        label: "Try-Out Pack 2 clips",
-        price: 580,
-        stripePriceId: "price_oslo_tryout",
+        stripePriceId: "price_1RqxJoHsJm7V7w1Y0a3DGwlS",
       },
 
-      { label: "Starter Pack 5 clips", price: 1350, stripePriceId: "price_oslo_starter" },
-      { label: "Mover Pack 10 clips", price: 2600, stripePriceId: "price_oslo_mover" },
-      { label: "Pro Pack 15 clips", price: 3650, stripePriceId: "price_oslo_pro" },
+      { label: "2 clips", price: 580, stripePriceId: "price_1RqxKZHsJm7V7w1YTd3g3r5k"},
+      { label: "5 clips", price: 1350, stripePriceId: "price_1RqxLVHsJm7V7w1YfSFj6zEv"},
+      { label: "10 clips", price: 2600, stripePriceId: "price_1RqxNFHsJm7V7w1YVaPFKDmp" },
+      { label: "15 clips", price: 3650, stripePriceId: "price_1RqxOUHsJm7V7w1YC1uxaPvj" },
     ],
   },
   {
@@ -42,11 +38,12 @@ const cities: City[] = [
       {
         label: "Basic Beginners Drop-in",
         price: 270,
-        stripePriceId: "price_drm_basic",
+        stripePriceId: "price_1RqxPNHsJm7V7w1Y1S9ejKVG",
       },
-      { label: "Starter Pack 5 clips", price: 1210, stripePriceId: "price_drm_starter" },
-      { label: "Mover Pack 10 clips", price: 2290, stripePriceId: "price_drm_mover" },
-      { label: "Pro Pack 15  clips", price: 3250, stripePriceId: "price_drm_pro" },
+      { label: "2 clips", price: 580, stripePriceId: "price_1RqxQ3HsJm7V7w1YvYUpuVE2",},
+      { label: "5 clips", price: 1210, stripePriceId: "price_1RqxReHsJm7V7w1YpfpKX55Q" },
+      { label: "10 clips", price: 2290, stripePriceId: "price_1RqxSTHsJm7V7w1Y0kIC3maa" },
+      { label: "15 clips", price: 3250, stripePriceId: "price_1RqxT1HsJm7V7w1YbVraaLbm" },
     ],
   },
 ];
@@ -57,8 +54,8 @@ const BookingPage = () => {
       <Hero
         title="Courses From Heels By Kristi"
         subtitle="Please select the available courses that suit you best."
-        imageSrc="/media/Heels.jpg"
-        imagePosition="center"
+        imageSrc="/media/20LR.jpg"
+        imagePosition="center 30%"
         quality={100}
         priority
       
@@ -72,6 +69,7 @@ const BookingPage = () => {
         </section>
 
         <section className={styles.info}>
+          <p>1 clip = 1 class</p>
           <p>
             Classes must be paid for before the class begins and when purchasing
             drop-in, the purchase receipt must be shown to the teacher before

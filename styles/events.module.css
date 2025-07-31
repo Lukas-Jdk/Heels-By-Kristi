@@ -7,4 +7,8 @@
 }
 .prices {
  padding-top: 1rem;
+ margin-bottom: 4rem;
+}
+.eventTextInfo {
+  max-width: 1000px;
 }

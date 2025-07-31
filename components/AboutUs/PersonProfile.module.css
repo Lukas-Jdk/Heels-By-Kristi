@@ -58,7 +58,11 @@
 .reverse {
   flex-direction: row-reverse;
 }
-
+@media (max-width: 1040px){
+.profileContainer {
+  grid-template-columns: 1fr;
+}
+}
 @media (max-width: 778px) {
   .profileContainer {
     display: flex;

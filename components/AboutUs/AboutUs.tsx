@@ -23,11 +23,7 @@ const AboutUs = () => {
           destination for those who are passionate about dancing in high heels
           and want to learn from the best in the business.
         </p>
-        <h4>
-          This studio is the ultimate destination for those who are passionate
-          about dancing in high heels and want to learn from the best in the
-          business.
-        </h4>
+       
 
         <Link href="/about" className={styles.readMoreButton}>
           Read More

@@ -1,0 +1,27 @@
+.mapContainer h1{
+font-family: var(--font-primary);
+}
+
+.mapContainer p{
+  font-family: var(--font-primary);
+}
+.mapWrapper {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mapDremmenText{
+  padding-top: 3rem;
+}
+@media (max-width: 768px) {
+  .contactSection {
+    grid-template-columns: 1fr;
+  }
+
+  .mapWrapper {
+    height: 300px;
+  }
+}

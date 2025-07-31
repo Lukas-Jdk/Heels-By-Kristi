@@ -7,7 +7,6 @@ const ClassSection = () => {
       <ClassCard 
       title= "Basic Beginners"
       text= "This class is perfect for those who never danced with High Heels but always dreamed about it! During the class you will learn everything about posture, balance and turns in Heels."
-      imageUrl= "/media/Heels8.jpg"
       link= "/schedule#basic-beginners-description"
       
       />
@@ -15,8 +14,8 @@ const ClassSection = () => {
       <ClassCard 
       title= "Intermediate Beginners"
       text= "This class is suitable for someone who has some dance experience. In this class you will learn different types of choreographies and will also focus on coordination skills, technique, posture and floor work."
-      imageUrl= "/media/Heels8.jpg"
       link= "/schedule#intermediate-beginners-description"
+    
       />
 
     </section>

@@ -15,17 +15,18 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 
 const validPrices = [
-  "price_oslo_basic",
-  "price_oslo_zero",
-  "price_oslo_inter",
-  "price_oslo_tryout",
-  "price_oslo_starter",
-  "price_oslo_mover",
-  "price_oslo_pro",
-  "price_drm_basic",
-  "price_drm_starter",
-  "price_drm_mover",
-  "price_drm_pro",
+  "price_1Ro0sOHsJm7V7w1Yy4RZ71bp", // Basic Beginner Drop-in - OSLO
+  "price_1RqxIoHsJm7V7w1YmfTZyNfB", // Zero Level Beginners - OSLO
+  "price_1RqxJoHsJm7V7w1Y0a3DGwlS", // Intermediate Beginners Drop-in - Oslo
+  "price_1RqxKZHsJm7V7w1YTd3g3r5k", // 2 clips - Oslo
+  "price_1RqxLVHsJm7V7w1YfSFj6zEv", // 5 clips - Oslo
+  "price_1RqxNFHsJm7V7w1YVaPFKDmp", // 10 clips - Oslo
+  "price_1RqxOUHsJm7V7w1YC1uxaPvj", // 15 clips - Oslo
+  "price_1RqxPNHsJm7V7w1Y1S9ejKVG", // Basic Beginner Drop-in - Drammen
+  "price_1RqxQ3HsJm7V7w1YvYUpuVE2", // 2 clips - Oslo
+  "price_1RqxReHsJm7V7w1YpfpKX55Q", // 5 clips - Oslo
+  "price_1RqxSTHsJm7V7w1Y0kIC3maa", // 10 clips - Oslo
+  "price_1RqxT1HsJm7V7w1YbVraaLbm", // 15 clips - Oslo
 ];
 
 export default async function handler(

@@ -1,29 +1,22 @@
 import styles from "./ClassCard.module.css";
-import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
   title: string;
   text: string;
-  imageUrl: string;
   link: string;
 };
-
-const ClassCard = ({ title, text, imageUrl, link }: Props) => {
+const ClassCard = ({ title, text, link }: Props) => {
   return (
     <div className={styles.card}>
-      <div className={styles.imageWrapper}>
-        <Image 
-        src={imageUrl} 
-        alt={title} 
-        fill className={styles.image} 
-        sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </div>
       <div className={styles.textBox}>
         <div className={styles.marker} />
         <div className={styles.content}>
-          <h3>{title}</h3>
+          <div className={styles.titleWrapper}>
+            <div className={styles.bubble}></div>
+              <div className={styles.bubbleSmall}></div>
+            <h3>{title}</h3>
+          </div>
           <p>{text}</p>
           <Link href={link} className={styles.viewMore}>
             View More →

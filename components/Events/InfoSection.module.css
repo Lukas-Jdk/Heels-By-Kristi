@@ -6,27 +6,21 @@
   align-items: center;
   padding: 2rem 0;
 }
-.reverse {
-  flex-direction: row-reverse;
-}
-.image {
-  object-fit: cover;
-}
-
-.imageWrapper {
+.titleWrapper {
   position: relative;
-  flex: 1 1 50%;
-  aspect-ratio: 3 / 2;
+  display: inline-block;
 }
 .textContent {
   flex: 1 1 50%;
 }
 .title {
+   position: relative;
   font-family: var(--font-primary);
-  color: var(--orange);
+  color: var(--black);
   font-size: 2.95rem;
   font-weight: 600;
   padding-bottom: 1rem;
+   z-index: 1;
 }
 
 .text {
@@ -36,16 +30,13 @@
   line-height: 27px;
   margin-bottom: 1rem;
 }
-
-@media (max-width: 986px) {
-  .sectionWrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .image {
-    order: 1;
-  }
+.titleWrapper section {
+  position: absolute;
+  top: -35px;
+  left: -50px;
+  z-index: 0;
 }
+
 
 @media (max-width: 768px) {
   .title {
