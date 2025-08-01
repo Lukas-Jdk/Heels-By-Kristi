@@ -11,7 +11,7 @@ const GalleryModal = dynamic(
 );
 
 const images = [
-  "/media/Heels0.jpg",
+  "/media/Heels0.JPG",
   "/media/22LR.jpg",
   "/media/Heels8.jpg",
   "/media/Heels75.jpg",
