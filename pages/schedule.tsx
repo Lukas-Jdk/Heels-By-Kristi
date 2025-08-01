@@ -2,7 +2,6 @@ import styles from "../styles/schedule.module.css";
 import ScheduleSection from "@/components/Schedule/ScheduleSection";
 import Hero from "../components/Layout/Hero";
 import ClassDescription from "../components/Schedule/ClassDescription";
-import Testimonials from "@/components/Testimonials/Testimonials";
 import Layout from "../components/Layout/Layout";
 import ProgramsDescription from "@/components/Testimonials/ProgramsDescription";
 
