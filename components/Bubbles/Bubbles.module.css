@@ -7,7 +7,7 @@
 
 .circle {
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 0;
   width: 200px;
   height: 200px;
@@ -23,7 +23,7 @@
 .circleSmall {
   position: absolute;
    z-index: 0;
-  top: 0;
+  top: -25px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -38,7 +38,7 @@
   right: 0;
 }
 
-/* MOBILE FIX */
+
 @media (max-width: 768px) {
   .wrapper {
     transform: scale(0.7);

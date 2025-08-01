@@ -12,20 +12,24 @@ type ScheduleItemData = {
 type CityScheduleProps = {
   city: string;
   schedule: ScheduleItemData[];
+  imageUrl: string;
+  imagePosition?: string;
 };
 
-const CitySchedule = ({ city, schedule }: CityScheduleProps) => {
+const CitySchedule = ({ city, schedule, imageUrl, imagePosition = "center" }: CityScheduleProps) => {
   return (
     <div className={styles.cityWrapper}>
       <div className={styles.header}>
         <Image
           className={styles.image}
-          src="https://img.pikbest.com/wp/202344/light-gray-background-design-abstract-grey-color-dark-black-and-with-old-wall-texture-of-cement-illuminated-by-white-gradient_9898524.jpg!w700wp"
+          src={imageUrl}
           alt={`${city} Schedule`}
-          width={500} 
-          height={400} 
-          unoptimized 
+          width={1000}
+          height={720}
+          
           priority
+       
+          style={{ objectPosition: imagePosition }}
         />
         <div className={styles.title}>
           <span>{city}</span>

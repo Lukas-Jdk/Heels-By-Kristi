@@ -5,17 +5,24 @@ import Image from "next/image";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-const GalleryModal = dynamic(() => import('@/components/GalleryModal/GalleryModal'), { ssr: false });
+const GalleryModal = dynamic(
+  () => import("@/components/GalleryModal/GalleryModal"),
+  { ssr: false }
+);
 
 const images = [
-  "/media/Heels1.jpg",
+  "/media/Heels0.jpg",
   "/media/22LR.jpg",
   "/media/Heels8.jpg",
   "/media/Heels75.jpg",
-  "/media/22LR.jpg",
+  "/media/16LR.jpg",
   "/media/Heels7.jpg",
   "/media/Heels2.jpg",
   "/media/Heels.jpg",
+  "/media/Heelsby4.jpg",
+  "/media/aiste1.jpg",
+   "/media/27LR.jpg",
+   "/media/Heelsby67.jpg",
 ];
 
 const Gallery = () => {
@@ -23,16 +30,14 @@ const Gallery = () => {
 
   const openModal = (index: number) => setSelectedIndex(index);
   const closeModal = () => setSelectedIndex(null);
-  const nextImage = () => setSelectedIndex((prev) => (prev! + 1) % images.length);
-  const prevImage = () => setSelectedIndex((prev) => (prev! - 1 + images.length) % images.length);
+  const nextImage = () =>
+    setSelectedIndex((prev) => (prev! + 1) % images.length);
+  const prevImage = () =>
+    setSelectedIndex((prev) => (prev! - 1 + images.length) % images.length);
 
   return (
     <Layout>
-      <Hero 
-      title="Gallery" 
-      height="small" 
-     
-      />
+      <Hero title="Gallery" height="small" />
       <section className={styles.gallery}>
         {images.map((src, index) => (
           <div

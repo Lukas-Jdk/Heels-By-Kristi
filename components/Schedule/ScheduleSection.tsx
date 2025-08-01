@@ -45,8 +45,16 @@ const ScheduleSection = () => {
             ...osloScheduleInter,
             ...osloScheduWednesdays,
           ]}
+          imageUrl= "/media/Heels4.jpg"
+          imagePosition="center 45%"
+          
         />
-        <ScheduleCity city="Drammen" schedule={[...drammenSchedule]} />
+        <ScheduleCity 
+        city="Drammen" 
+        schedule={[...drammenSchedule]} 
+        imageUrl= "/media/aiste2.jpg"
+         imagePosition="center"
+        />
       </div>
     </div>
   );

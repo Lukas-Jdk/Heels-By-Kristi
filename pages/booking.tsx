@@ -7,7 +7,8 @@ import Layout from "../components/Layout/Layout";
 const cities: City[] = [
   {
     name: "OSLO",
-    imageUrl: "/media/Heels8.jpg",
+    imageUrl: "/media/Heels4.jpg",
+    imagePosition: "center 30%",
     options: [
       {
         label: "Basic Beginner Drop-in",
@@ -33,7 +34,7 @@ const cities: City[] = [
   },
   {
     name: "DRAMMEN",
-    imageUrl: "/media/Heels8.jpg",
+    imageUrl: "/media/aiste2.jpg",
     options: [
       {
         label: "Basic Beginners Drop-in",

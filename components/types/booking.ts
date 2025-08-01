@@ -8,4 +8,5 @@ export type City = {
   name: "OSLO" | "DRAMMEN";
   imageUrl: string;
   options: PriceOption[];
+  imagePosition?: string;
 };

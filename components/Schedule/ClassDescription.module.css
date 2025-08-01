@@ -17,6 +17,7 @@
 }
 
 .title {
+  position: relative;
   padding-top: 3rem;
   font-size: 2.95rem;
   font-weight: 600;
