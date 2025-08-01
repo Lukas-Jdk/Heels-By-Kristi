@@ -21,7 +21,7 @@ const GalleryModal = ({ images, currentIndex, onClose, onPrev, onNext }: Props) 
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [onClose, onNext, onPrev]);
 
   return (
     <div className={styles.modalBackdrop} onClick={onClose}>

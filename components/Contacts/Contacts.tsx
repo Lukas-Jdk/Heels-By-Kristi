@@ -23,7 +23,7 @@ const Contacts = () => {
               <strong>Car:</strong> Free parking from 16:00 to 22:00, and on
               weekends, in spaces marked with: Fiberworks, Hagen VVS,
               Rørentreprenørenes Felleskontor, Kaph Entreprenør, Pioneer, Paid
-              Guest Parking, marked with "Mot Avgift..." (Subject to fee...)
+              Guest Parking, marked with &quot;Mot Avgift...&quot;  (Subject to fee...)
             </p>
             <p>
               <strong>Bus:</strong> 21 bus and a 5-minute walk.

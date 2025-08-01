@@ -1,10 +1,8 @@
 import styles from "../styles/about.module.css";
 import Hero from "../components/Layout/Hero";
 import PersonProfile from "../components/AboutUs/PersonProfile";
-import Testimonials from "../components/Testimonials/Testimonials";
 import Contacts from "../components/Contacts/Contacts";
 import Layout from "../components/Layout/Layout";
-import ProgramsDescription from "@/components/Testimonials/ProgramsDescription";
 
 const About = () => {
   return (
