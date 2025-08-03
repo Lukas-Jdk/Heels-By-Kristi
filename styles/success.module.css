@@ -4,10 +4,12 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
+  padding: 0 2rem;
+  text-align: center;
 }
 
 .successWrapper h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding-bottom: 2rem;
   font-family: var(--font-primary);
   color: var(--orange);
@@ -20,7 +22,22 @@
 }
 
 .successWrapper h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
   font-family: var(--font-second);
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .successWrapper h1 {
+    font-size: 2.8rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .successWrapper p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
 }

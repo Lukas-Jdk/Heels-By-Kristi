@@ -2,41 +2,40 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { RateLimiterMemory } from "rate-limiter-flexible";
 import Stripe from "stripe";
 
-
 const rateLimiter = new RateLimiterMemory({
   points: 5,
   duration: 60,
 });
-
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2025-06-30.basil",
 });
 
 
-const validPrices = [
-  "price_1Ro0sOHsJm7V7w1Yy4RZ71bp", // Basic Beginner Drop-in - OSLO
-  "price_1RqxIoHsJm7V7w1YmfTZyNfB", // Zero Level Beginners - OSLO
-  "price_1RqxJoHsJm7V7w1Y0a3DGwlS", // Intermediate Beginners Drop-in - Oslo
-  "price_1RqxKZHsJm7V7w1YTd3g3r5k", // 2 clips - Oslo
-  "price_1RqxLVHsJm7V7w1YfSFj6zEv", // 5 clips - Oslo
-  "price_1RqxNFHsJm7V7w1YVaPFKDmp", // 10 clips - Oslo
-  "price_1RqxOUHsJm7V7w1YC1uxaPvj", // 15 clips - Oslo
-  "price_1RqxPNHsJm7V7w1Y1S9ejKVG", // Basic Beginner Drop-in - Drammen
-  "price_1RqxQ3HsJm7V7w1YvYUpuVE2", // 2 clips - Oslo
-  "price_1RqxReHsJm7V7w1YpfpKX55Q", // 5 clips - Oslo
-  "price_1RqxSTHsJm7V7w1Y0kIC3maa", // 10 clips - Oslo
-  "price_1RqxT1HsJm7V7w1YbVraaLbm", // 15 clips - Oslo
-];
+const productNames: Record<string, string> = {
+  "price_1Ro0sOHsJm7V7w1Yy4RZ71bp": "Basic Beginner Drop-in - OSLO",
+  "price_1RqxIoHsJm7V7w1YmfTZyNfB": "Zero Level Beginners - OSLO",
+  "price_1RqxJoHsJm7V7w1Y0a3DGwlS": "Intermediate Beginners Drop-in - OSLO",
+  "price_1RqxKZHsJm7V7w1YTd3g3r5k": "2 clips - OSLO",
+  "price_1RqxLVHsJm7V7w1YfSFj6zEv": "5 clips - OSLO",
+  "price_1RqxNFHsJm7V7w1YVaPFKDmp": "10 clips - OSLO",
+  "price_1RqxOUHsJm7V7w1YC1uxaPvj": "15 clips - OSLO",
+  "price_1RqxPNHsJm7V7w1Y1S9ejKVG": "Basic Beginner Drop-in - DRAMMEN",
+  "price_1RqxQ3HsJm7V7w1YvYUpuVE2": "2 clips - DRAMMEN",
+  "price_1RqxReHsJm7V7w1YpfpKX55Q": "5 clips - DRAMMEN",
+  "price_1RqxSTHsJm7V7w1Y0kIC3maa": "10 clips - DRAMMEN",
+  "price_1RqxT1HsJm7V7w1YbVraaLbm": "15 clips - DRAMMEN",
+};
+
+function getProductNameFromPrice(priceId: string): string {
+  return productNames[priceId] || "Unknown product";
+}
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== "POST") {
-    return res.status(405).end("Method Not Allowed");
-  }
-
+  if (req.method !== "POST") return res.status(405).end("Method Not Allowed");
 
   const rawIp = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
   const ip = Array.isArray(rawIp) ? rawIp[0] : rawIp;
@@ -44,18 +43,17 @@ export default async function handler(
   try {
     await rateLimiter.consume(ip || "unknown");
   } catch {
-    return res
-      .status(429)
-      .json({ error: "Too many requests – please try again later." });
+    return res.status(429).json({
+      error: "Too many requests – please try again later.",
+    });
   }
 
   const { priceId } = req.body;
 
-
   if (
     typeof priceId !== "string" ||
     !priceId.trim() ||
-    !validPrices.includes(priceId)
+    !productNames[priceId]
   ) {
     return res.status(400).json({ error: "Invalid or missing priceId" });
   }
@@ -75,11 +73,14 @@ export default async function handler(
       ],
       success_url: `${baseUrl}/success`,
       cancel_url: `${baseUrl}/cancel`,
+      metadata: {
+        product_name: getProductNameFromPrice(priceId),
+      },
     });
 
     return res.status(200).json({
       url: session.url,
-      sessionId: session.id, 
+      sessionId: session.id,
     });
   } catch (err: unknown) {
     console.error("Stripe error:", JSON.stringify(err, null, 2));

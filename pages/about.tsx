@@ -22,7 +22,7 @@ const About = () => {
         <PersonProfile
           name="Kristina"
           description={`Hi! I am a professional dancer, choreographer and “Heels by Kristi” founder. Dance has been my only passion all my life and I am so lucky to share my knowledge with my students for more than 10 years. My choreographies are characterized by exceptional musicality, strong emotional expression, and attention to each dancer's self-expression. Kristina pays great attention to technique and its development.`}
-          imageUrl="/media/3LR.jpg"
+          imageUrl="/media/27LR.jpg"
           reverse={false}
           education="Vilnius College Dance pedagogy degree"
           profDev="Yanis Marshall, Cisco Ruelas, Cris Clark, Sharon June, Tink McClay and others."

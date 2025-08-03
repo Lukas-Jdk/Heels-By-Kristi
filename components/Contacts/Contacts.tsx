@@ -31,12 +31,8 @@ const Contacts = () => {
             <p>
               <strong>Subway:</strong> subway stop Hasle and a 5-minute walk.
             </p>
-            <p>
-              <strong>Address:</strong> Eikenga 11, 0579 Oslo
-            </p>
-            <p>
-              <strong>Address:</strong> Syretårnet 8, 3048 Drammen
-            </p>
+         
+           
           </div>
         </div>
 

@@ -22,7 +22,7 @@ const SuccessPage = () => {
       <div className={styles.successWrapper}>
         <h1>Thank you for your purchase! </h1>
         <p>You’ll receive a confirmation email shortly.</p>
-        <h3>If you have questions, contact us directly.</h3>
+        <p>If you have questions, contact us directly.</p>
       </div>
     </Layout>
   );
