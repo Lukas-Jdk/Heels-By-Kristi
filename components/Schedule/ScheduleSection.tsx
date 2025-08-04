@@ -11,7 +11,7 @@ const osloSchedule = [
 ];
 const osloScheduleInter = [
   {
-    day: "Mondays",
+    day: "MONDAYS",
     level: "Intermediate Beginners",
     time: "19.00 - 20.30",
     teacher: "Kristina",

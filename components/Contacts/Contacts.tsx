@@ -17,7 +17,7 @@ const Contacts = () => {
             <FaMapMarkerAlt className={styles.icon} />
           </div>
           <div>
-            <h4>FIND US</h4>
+            <h4>FIND US <strong className={styles.markOsloWord}>OSLO</strong></h4>
             <p>Studio Dancify, 3rd floor, 2nd studio.</p>
             <p>
               <strong>Car:</strong> Free parking from 16:00 to 22:00, and on

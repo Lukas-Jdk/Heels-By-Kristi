@@ -73,6 +73,11 @@
 
 }
 
+.markOsloWord {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 @media (max-width: 900px) {
   .contactSection {
     grid-template-columns: 1fr;
