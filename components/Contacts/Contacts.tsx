@@ -42,7 +42,7 @@ const Contacts = () => {
           </div>
           <div>
             <h4>WRITE TO US</h4>
-            <p>info@heelsbykristi.no</p>
+            <p>heelsbykristi@gmail.com</p>
           </div>
         </div>
 
