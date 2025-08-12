@@ -41,7 +41,7 @@ const cities: City[] = [
         price: 270,
         stripePriceId: "price_1RqxPNHsJm7V7w1Y1S9ejKVG",
       },
-      { label: "2 clips", price: 580, stripePriceId: "price_1RqxQ3HsJm7V7w1YvYUpuVE2",},
+      { label: "2 clips", price: 520, stripePriceId: "price_1RqxQ3HsJm7V7w1YvYUpuVE2",},
       { label: "5 clips", price: 1210, stripePriceId: "price_1RqxReHsJm7V7w1YpfpKX55Q" },
       { label: "10 clips", price: 2290, stripePriceId: "price_1RqxSTHsJm7V7w1Y0kIC3maa" },
       { label: "15 clips", price: 3250, stripePriceId: "price_1RqxT1HsJm7V7w1YbVraaLbm" },
