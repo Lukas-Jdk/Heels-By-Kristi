@@ -26,10 +26,18 @@ const GalleryModal = ({ images, currentIndex, onClose, onPrev, onNext }: Props) 
   return (
     <div className={styles.modalBackdrop} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        <button className={styles.close} onClick={onClose}>
+        <button 
+        className={styles.close} 
+        onClick={onClose}
+        aria-label="Close gallery"
+        >
           <FaTimes />
         </button>
-        <button className={styles.prev} onClick={onPrev}>
+        <button 
+        className={styles.prev} 
+        onClick={onPrev}
+        aria-label="Previous image"
+        >
           <FaChevronLeft />
         </button>
         <div className={styles.imageContainer}>
@@ -41,7 +49,11 @@ const GalleryModal = ({ images, currentIndex, onClose, onPrev, onNext }: Props) 
             sizes="100vw"
           />
         </div>
-        <button className={styles.next} onClick={onNext}>
+        <button 
+        className={styles.next} 
+        onClick={onNext}
+        aria-label="Next image"
+        >
           <FaChevronRight />
         </button>
       </div>

@@ -17,7 +17,11 @@ const InstructorInfo = ({ name, details }: Props) => {
           <span className={styles.icon}><FaUserAlt  /></span>
           <span className={styles.label}>Instructor {name}</span>
         </div>
-        <button className={styles.toggle} onClick={() => setOpen(!open)}>
+        <button 
+        className={styles.toggle} 
+        onClick={() => setOpen(!open)}
+        aria-label="Instructor info"
+        >
           {open ? "−" : "+"}
         </button>
       </div>

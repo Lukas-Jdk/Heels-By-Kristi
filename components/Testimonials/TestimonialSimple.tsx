@@ -25,7 +25,11 @@ const TestimonialsSimple = () => {
 
   return (
     <div className={styles.wrapper}>
-      <button onClick={goLeft} className={styles.arrow}>
+      <button 
+      onClick={goLeft} 
+      className={styles.arrow}
+      aria-label="Previous testimonial"
+      >
         <ChevronLeft size={5} />
       </button>
 
@@ -33,7 +37,11 @@ const TestimonialsSimple = () => {
         <TestimonialPreviewCard {...testimonials[index]} />
       </div>
 
-      <button onClick={goRight} className={styles.arrow}>
+      <button 
+      onClick={goRight} 
+      className={styles.arrow}
+      aria-label="Next testimonial"
+      >
         <ChevronRight size={5} />
       </button>
     </div>

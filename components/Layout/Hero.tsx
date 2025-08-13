@@ -47,6 +47,12 @@ const Hero = ({
           preload="auto"
         >
           <source src={videoSrc} type="video/mp4" />
+            <track
+      src="/captions.vtt"
+      kind="captions"
+      srcLang="en"
+      label="English"
+    />
           Your browser does not support the video tag.
         </video>
       )}

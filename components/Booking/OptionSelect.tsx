@@ -43,12 +43,14 @@ const OptionSelect = ({ options }: Props) => {
           </option>
         ))}
       </select>
-      <button className={styles.buyButton}
-      disabled = {!selected || loading}
-      onClick={handleBuy}
+      <button
+        className={styles.buyButton}
+        type="submit"
+        disabled={!selected || loading}
+        onClick={handleBuy}
+        aria-label="Buy selected option"
       >
-        {loading? "Redirecting..." : "Buy now"}
-
+        {loading ? "Redirecting..." : "Buy now"}
       </button>
     </>
   );
