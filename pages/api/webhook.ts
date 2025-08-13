@@ -3,50 +3,47 @@ import { buffer } from "micro";
 import Stripe from "stripe";
 import { Resend } from "resend";
 
-
 export const config = {
   api: {
     bodyParser: false,
   },
 };
 
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-apiVersion: "2025-06-30.basil",
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+  apiVersion: "2025-06-30.basil",
 });
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-
   if (req.method !== "POST") {
     return res.status(405).send("Method Not Allowed");
   }
 
- 
-  const buf = await buffer(req);
-  const sig = req.headers["stripe-signature"] as string;
-  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!;
-
   let event: Stripe.Event;
 
   try {
-    event = stripe.webhooks.constructEvent(buf, sig, webhookSecret);
-  } catch (err) {
-    console.error("❌ Webhook verification failed:", err);
-    return res.status(400).send("Webhook Error");
+    const buf = await buffer(req);
+    const sig = req.headers["stripe-signature"] as string;
+
+    if (!process.env.STRIPE_WEBHOOK_SECRET) {
+      console.error("❌ STRIPE_WEBHOOK_SECRET missing!");
+      return res.status(500).send("Missing STRIPE_WEBHOOK_SECRET");
+    }
+
+    event = stripe.webhooks.constructEvent(buf, sig, process.env.STRIPE_WEBHOOK_SECRET);
+  } catch (err: any) {
+    console.error("❌ Webhook error:", err.message);
+    return res.status(400).send(`Webhook Error: ${err.message}`);
   }
 
-  
   if (event.type === "checkout.session.completed") {
     const session = event.data.object as Stripe.Checkout.Session;
 
     const customerEmail = session.customer_details?.email;
     const amountTotal = (session.amount_total || 0) / 100;
-    const productName = session.metadata?.product_name || "Unknown Product";
+    const productName = session.metadata?.product_name || "Unknown product";
 
-    
     try {
       await resend.emails.send({
         from: "Heels by Kristi <onboarding@resend.dev>",
@@ -59,11 +56,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           <p><strong>Total Paid:</strong> ${amountTotal} NOK</p>
         `,
       });
-    } catch (err) {
-      console.error("❌ Failed to send admin email:", err);
+    } catch (e) {
+      console.error("Admin email error:", e);
     }
 
-   
     if (customerEmail) {
       try {
         await resend.emails.send({
@@ -77,12 +73,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             <p>If you have any questions, just reply to this email.</p>
           `,
         });
-      } catch (err) {
-        console.error("❌ Failed to send customer email:", err);
+      } catch (e) {
+        console.error("Customer email error:", e);
       }
     }
   }
 
-  
   res.status(200).json({ received: true });
 }
