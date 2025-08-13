@@ -32,9 +32,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     event = stripe.webhooks.constructEvent(buf, sig, process.env.STRIPE_WEBHOOK_SECRET);
-  } catch (err: any) {
-    console.error("❌ Webhook error:", err.message);
-    return res.status(400).send(`Webhook Error: ${err.message}`);
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      console.error("❌ Webhook error:", err.message);
+      return res.status(400).send(`Webhook Error: ${err.message}`);
+    }
+    console.error("❌ Unknown webhook error:", err);
+    return res.status(400).send("Webhook Error: Unknown error");
   }
 
   if (event.type === "checkout.session.completed") {
