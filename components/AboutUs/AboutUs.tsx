@@ -25,7 +25,11 @@ const AboutUs = () => {
         </p>
        
 
-        <Link href="/about" className={styles.readMoreButton}>
+        <Link 
+        href="/about" 
+        className={styles.readMoreButton}
+        aria-label="Read more about Heels By Kristi"
+        >
           Read More
         </Link>
       </div>
