@@ -44,15 +44,18 @@ const Hero = ({
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/media/hero-poster.jpg"
+          aria-hidden="true"
+
         >
           <source src={videoSrc} type="video/mp4" />
-            <track
+            {/* <track
       src="/captions.vtt"
       kind="captions"
       srcLang="en"
       label="English"
-    />
+    /> */}
           Your browser does not support the video tag.
         </video>
       )}

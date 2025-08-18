@@ -1,12 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/index.module.css";
-import Hero from "../components/Layout/Hero";
-import ButtonGroup from "../components/ButtonGroup/ButtonGroup";
-import ClassSection from "../components/ClassCardSection/ClassSection";
 import Layout from "../components/Layout/Layout";
-import AboutUs from "@/components/AboutUs/AboutUs";
-import EnrrollElementBlock from "@/components/EnrollElementBlock/EnrollElementBlock";
-import ZeroLevel from "@/components/ZeroLevel/ZeroLevel";
+import Hero from "../components/Layout/Hero";
+import dynamic from "next/dynamic";
+
+const ButtonGroup        = dynamic(() => import("../components/ButtonGroup/ButtonGroup"), { ssr:false });
+const ClassSection       = dynamic(() => import("../components/ClassCardSection/ClassSection"), { ssr:false });
+const AboutUs            = dynamic(() => import("@/components/AboutUs/AboutUs"), { ssr:false });
+const EnrrollElementBlock= dynamic(() => import("@/components/EnrollElementBlock/EnrollElementBlock"), { ssr:false });
+const ZeroLevel          = dynamic(() => import("@/components/ZeroLevel/ZeroLevel"), { ssr:false });
 
 const HomePage = () => {
   return (

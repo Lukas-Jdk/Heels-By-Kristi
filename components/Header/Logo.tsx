@@ -8,19 +8,21 @@ type LogoProps = {
 };
 
 const Logo: React.FC<LogoProps> = ({ variant, scrolled }) => {
-  const src =
-    variant === "light" ? "/media/logoWhite.png" : "/media/logoBlack.png";
+  const src = variant === "light" ? "/media/logoWhite.png" : "/media/logoBlack.png";
 
   return (
-    <div  className={`${styles.logo} ${scrolled ? styles.logoSmall : ""}`}>
-      <Link href="/">
+    <div className={`${styles.logo} ${scrolled ? styles.logoSmall : ""}`}>
+      <Link href="/" aria-label="Heels by Kristi – Home">
         <Image
           src={src}
-          alt="Heels By Kristi homepage logo"
-          width={180}
+          alt="Heels by Kristi"
+          width={180}               
           height={120}
-          priority
-           style={{ objectFit: "cover" }}
+          priority                   
+          sizes="(max-width: 768px) 120px, 180px"  
+          quality={85}  
+          fetchPriority="high"             
+     
         />
       </Link>
     </div>
