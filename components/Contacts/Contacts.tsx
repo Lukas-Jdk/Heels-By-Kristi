@@ -42,7 +42,7 @@ const Contacts = () => {
           </div>
           <div>
             <h4>WRITE TO US</h4>
-            <p>heelsbykristi@gmail.com</p>
+            <p><a href="mailto:heelsbykristi@gmail.com" className={styles.link}> heelsbykristi@gmail.com</a></p>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ const Contacts = () => {
           </div>
           <div>
             <h4>CALL US</h4>
-            <p>+47 412 75 229</p>
+            <p><a href="tel:+4741275229" className={styles.link}>+47 412 75 229</a></p>
           </div>
         </div>
       </div>

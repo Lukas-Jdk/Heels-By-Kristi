@@ -73,6 +73,7 @@
   text-overflow: ellipsis;
   font-weight: 400;
   padding-bottom: 0.5rem;
+  max-height: calc(1.6em * 3);
 }
 
 .viewMore {

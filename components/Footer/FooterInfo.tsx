@@ -1,12 +1,11 @@
 import styles from "./FooterInfo.module.css";
-import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const FooterInfo = () => {
   return (
     <div className={styles.footerInfo}>
       <h2>Information</h2>
       <div className={styles.adressInfo}>
-
         <div className={styles.infoBlock}>
           <FaMapMarkerAlt className={styles.icon} />
           <div>
@@ -14,20 +13,35 @@ const FooterInfo = () => {
           </div>
         </div>
 
-          <div className={styles.infoBlock}>
+        <div className={styles.infoBlock}>
           <FaMapMarkerAlt className={styles.icon} />
           <div>
             <p>Syretårnet 8, 3048 Drammen</p>
           </div>
         </div>
 
-          <div className={styles.infoBlock}>
-          <FaPhone className={styles.icon} />
+      
+        <div className={styles.infoBlock}>
+          <FaEnvelope className={styles.icon} />
           <div>
-            <p> +47 412 75 229</p>
+            <p>
+              <a href="mailto:heelsbykristi@gmail.com" className={styles.link}>
+                heelsbykristi@gmail.com
+              </a>
+            </p>
           </div>
         </div>
 
+        <div className={styles.infoBlock}>
+          <FaPhone className={styles.icon} />
+          <div>
+            <p>
+              <a href="tel:+4741275229" className={styles.link}>
+                +47 412 75 229
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

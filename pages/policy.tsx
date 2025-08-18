@@ -107,7 +107,7 @@ export default function PolicyPage() {
         <section className={styles.section}>
           <h2>10. Contact</h2>
           <strong><p>For any questions or concerns, reach out to us at:</p></strong>
-          <p>📧 heelsbykristi@gmail.com</p>
+          <p><a href="mailto:heelsbykristi@gmail.com" className={styles.link}> heelsbykristi@gmail.com</a></p>
           <p>📞 41275229</p>
           <p>🌐 www.heelsbykristi.no</p>
         </section>

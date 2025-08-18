@@ -78,6 +78,17 @@
   font-weight: 600;
 }
 
+
+
+.link {
+  color: inherit;
+  text-decoration: none;
+   cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline; /* arba spalva */
+}
 @media (max-width: 900px) {
   .contactSection {
     grid-template-columns: 1fr;
