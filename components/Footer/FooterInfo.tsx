@@ -24,7 +24,7 @@ const FooterInfo = () => {
         <div className={styles.infoBlock}>
           <FaEnvelope className={styles.icon} />
           <div>
-            <p>
+            <p className={styles.emailLink}>
               <a href="mailto:heelsbykristi@gmail.com" className={styles.link}>
                 heelsbykristi@gmail.com
               </a>

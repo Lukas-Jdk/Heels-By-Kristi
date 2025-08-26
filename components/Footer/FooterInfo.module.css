@@ -30,24 +30,24 @@
 }
 
 .link {
-  color: inherit;
+  color: white;
   text-decoration: none;
-     cursor: pointer;
+  cursor: pointer;
+
 }
 
 .link:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
-
-
 
 @media (max-width: 550px) {
   .footerInfo h2 {
     font-size: 16px;
   }
   .footerInfo p {
-    font-size: 11.5px;
+    font-size: 12px;
     padding-right: 1rem;
-    max-width: 103px;
+   
   }
+
 }
