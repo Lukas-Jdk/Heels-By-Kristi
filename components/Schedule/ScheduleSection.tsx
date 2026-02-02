@@ -29,7 +29,7 @@ const drammenSchedule = [
   {
     day: "TUESDAYS",
     level: "Basic Beginners",
-    time: "19.30 - 21.00",
+    time: "19.30 - 20.45",
     teacher: "Aiste",
   },
 ];
