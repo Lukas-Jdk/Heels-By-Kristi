@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import "@/styles/globals.css";
 import { Poppins, Roboto } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Primary: Poppins
 const poppins = Poppins({
@@ -21,6 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className={`${poppins.variable} ${roboto.variable}`}>
       <Component {...pageProps} />
+      <SpeedInsights />
     </div>
   );
 }
