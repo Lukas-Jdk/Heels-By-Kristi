@@ -1,23 +1,41 @@
-import styles from "./Bubbles.module.css";
 import clsx from "classnames";
+import styles from "./Bubbles.module.css";
 
 type Props = {
   align?: "left" | "right";
+  titleOverlap?: boolean;
 };
 
-const Bubbles = ({ align = "left" }: Props) => {
+const Bubbles = ({
+  align = "left",
+  titleOverlap = false,
+}: Props) => {
   return (
-    <section>
+    <div
+      className={clsx(
+        titleOverlap && styles.titleWrapper
+      )}
+      aria-hidden="true"
+    >
       <div
-        className={clsx(styles.circle, align === "right" && styles.circleRight)}
+        className={clsx(
+          styles.circle,
+          align === "right" && !titleOverlap && styles.circleRight,
+          titleOverlap && styles.titleCircle
+        )}
       />
+
       <div
         className={clsx(
           styles.circleSmall,
-          align === "right" ? styles.circleSmallRight : styles.circleSmallLeft
+          !titleOverlap &&
+            (align === "right"
+              ? styles.circleSmallRight
+              : styles.circleSmallLeft),
+          titleOverlap && styles.titleCircleSmall
         )}
-      ></div>
-    </section>
+      />
+    </div>
   );
 };
 

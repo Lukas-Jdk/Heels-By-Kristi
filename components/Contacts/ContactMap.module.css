@@ -18,6 +18,10 @@
 .mapDremmenText {
   padding-top: 3rem;
 }
+
+.mapVilniusText {
+  margin-top: 2rem;
+}
 @media (max-width: 768px) {
   .contactSection {
     grid-template-columns: 1fr;

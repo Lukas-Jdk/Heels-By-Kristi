@@ -8,17 +8,20 @@ type Props = { options: PriceOption[] };
 const OptionSelect = ({ options }: Props) => {
   const [selected, setSelected] = useState<PriceOption | null>(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleBuy = async () => {
     if (!selected) return;
     setLoading(true);
+    setError(null);
 
     try {
       const { data } = await axios.post("/api/create-checkout", {
         priceId: selected.stripePriceId,
       });
       window.location.href = data.url;
-    } finally {
+    } catch {
+      setError("Something went wrong. Please try again in a moment.");
       setLoading(false);
     }
   };
@@ -52,6 +55,7 @@ const OptionSelect = ({ options }: Props) => {
       >
         {loading ? "Redirecting..." : "Buy now"}
       </button>
+      {error && <p className={styles.error}>{error}</p>}
     </>
   );
 };

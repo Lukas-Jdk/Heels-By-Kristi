@@ -1,10 +1,3 @@
-.wrapper {
-  position: absolute;
-  top: -60px;
-  left: -30px;
-  z-index: 0;
-}
-
 .circle {
   position: absolute;
   top: -20px;
@@ -13,6 +6,7 @@
   height: 200px;
   border-radius: 50%;
   background: rgba(212, 187, 162, 0.2);
+  pointer-events: none;
 }
 
 .circleRight {
@@ -22,12 +16,13 @@
 
 .circleSmall {
   position: absolute;
-   z-index: 0;
+  z-index: 0;
   top: -25px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: var(--orange);
+  pointer-events: none;
 }
 
 .circleSmallLeft {
@@ -38,20 +33,56 @@
   right: 0;
 }
 
+/* Tik OUR CLASSES pavadinimų burbulams */
+.titleWrapper {
+  position: absolute;
+  top: 50%;
+  left: -55px;
+  width: 170px;
+  height: 170px;
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.titleCircle {
+  top: 0;
+  left: 0;
+  width: 155px;
+  height: 155px;
+}
+
+.titleCircleSmall {
+  top: -12px;
+  left: 105px;
+  width: 65px;
+  height: 65px;
+}
 
 @media (max-width: 768px) {
-  .wrapper {
-    transform: scale(0.7);
-    top: -30px;
-    left: -10px;
-    right: auto;
-  }
-
   .circleRight {
     right: -10px;
   }
 
   .circleSmallRight {
     right: -20px;
+  }
+
+  .titleWrapper {
+    left: -28px;
+    width: 115px;
+    height: 115px;
+  }
+
+  .titleCircle {
+    width: 105px;
+    height: 105px;
+  }
+
+  .titleCircleSmall {
+    top: -8px;
+    left: 72px;
+    width: 45px;
+    height: 45px;
   }
 }

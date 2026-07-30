@@ -21,10 +21,109 @@
   font-weight: bold;
 }
 
+
+/* LITHUANIA */
+
+.lithuaniaGrid {
+  width: min(1200px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 3rem;
+
+  align-items: start;
+}
+
+.scheduleColumn,
+.bookingColumn {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.scheduleColumn > * {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.lithuaniaCards {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.lithuaniaCards > * {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+/* Tekstas užima abu grid stulpelius */
+.lithuaniaInfo {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+}
+
+.lithuaniaInfo p {
+  width: 100%;
+  max-width: none;
+
+  margin: 0 0 1.75rem;
+  padding: 0;
+  text-align: left;
+  font-family: var(--font-primary);
+}
+
+.lithuaniaInfo p:last-child {
+  margin-bottom: 0;
+}
+
+.lithuaniaInfo {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .lithuaniaGrid {
+    width: min(100% - 2rem, 680px);
+    padding: 2.5rem 0;
+
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 2.5rem;
+  }
+
+  .scheduleColumn {
+    grid-column: 1;
+  }
+
+  .bookingColumn {
+    grid-column: 1;
+  }
+
+  .lithuaniaInfo {
+    grid-column: 1;
+  }
+}
+
 @media (max-width: 992px) {
   .cards {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

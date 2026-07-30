@@ -39,3 +39,9 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.error {
+  margin-top: 0.5rem;
+  color: #c0392b;
+  font-size: 0.85rem;
+}

@@ -1,35 +1,38 @@
 import styles from "./ZeroLevel.module.css";
-import Link from 'next/link'
+import Link from "next/link";
 
 const ZeroLevel = () => {
   return (
     <div className={styles.zeroLevelWrapper}>
       <div className={styles.zeroLevelContainer}>
         <div className={styles.zeroIntro}>
-          <h1>NEW ‘25 FALL SEASON CLASS</h1>
-          <h2>NEW CLASS: ZERO-LEVEL BEGINNERS - HIGH HEELS </h2>
-          <h3>Wednesdays | 17:30 - 19:00 | </h3>
-          <p> Ready to start from zero? This brand new class is designed
-            especially for total beginners — no experience needed!
+          <h1>NEW ’26 FALL SEASON CLASS</h1>
+          <h2>NEW CLASS: OPEN LEVEL – HIGH HEELS (VILNIUS)</h2>
+          <h3>Mondays | 19:45–21:15</h3>
+
+          <p>
+            Our Open Level class welcomes both beginners and experienced
+            dancers. Whether it’s your first time dancing in heels or you’re
+            looking to refine your skills, this class is for you.
           </p>
         </div>
 
         <div className={styles.zeroFocus}>
           <h2>We’ll focus on :</h2>
           <ul>
-            <li>- Foundational technique</li>
-            <li>- Basics + clean execution</li>
-            <li>- Choreographies that are simple but built on everything you
-              learnin class
-            </li>
+            <li>- High heels technique</li>
+            <li>- Body strengthening and control</li>
+            <li>- Balance, posture, and confidence</li>
+            <li>- Choreography that helps you grow every week</li>
           </ul>
 
           <p>
-            Perfect for those stepping into heels for the first time or anyone
-            wanting to build a strong base before moving up. This isn’t just a
-            class — it’s the start of your journey!
+            Come learn, challenge yourself, and be part of our supportive heels
+            community!
           </p>
-          <Link className={styles.zeroBtn} href="/booking">BUY</Link>
+          <Link className={styles.zeroBtn} href="/lithuania">
+            BUY
+          </Link>
         </div>
       </div>
     </div>

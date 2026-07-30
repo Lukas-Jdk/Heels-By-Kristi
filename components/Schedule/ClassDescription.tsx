@@ -1,15 +1,19 @@
-import styles from "./ClassDescription.module.css";
-import clsx from "classnames";
-import InstructorInfo from "./InstructorInfo";
+// src/components/Schedule/ClassDescription.tsx
 import Link from "next/link";
-import Bubbles from '@/components/Bubbles/Bubbles'
+import clsx from "classnames";
+
+import styles from "./ClassDescription.module.css";
+import Bubbles from "../Bubbles/Bubbles";
+import InstructorInfo from "./InstructorInfo";
 
 type Props = {
   id: string;
   title: string;
   description: string;
-  instructor: string;
+  instructor?: string;
   align?: "left" | "right";
+  showFooter?: boolean;
+  bubblesByTitle?: boolean;
 };
 
 const ClassDescription = ({
@@ -17,28 +21,41 @@ const ClassDescription = ({
   title,
   description,
   instructor,
-  align = "left",
+  align,
+  showFooter = true,
+  bubblesByTitle = false,
 }: Props) => {
   return (
     <section
       id={id}
       className={clsx(styles.block, align === "right" && styles.right)}
     >
-     <Bubbles align={align}/>
+      {!bubblesByTitle && <Bubbles align={align} />}
+
       <div className={styles.basicAndInter}>
-        <h2 className={styles.title}>{title}</h2>
+        <div className={styles.titleWrapper}>
+          {bubblesByTitle && <Bubbles titleOverlap />}
+
+          <h2 className={styles.title}>{title}</h2>
+        </div>
+
         <p className={styles.description}>{description}</p>
       </div>
 
-      <div className={styles.footer}>
-        <Link href="/booking" className={styles.price}>
-        PRICE
-        </Link>
-        <InstructorInfo
-          name={instructor}
-          details="Further professional development: Yanis Marshall, Cisco Ruelas, Cris Clark, Sharon June, Tink McClay and others."
-        />
-      </div>
+      {showFooter && (
+        <div className={styles.footer}>
+          <Link href="/booking" className={styles.price}>
+            PRICE
+          </Link>
+
+          {instructor && (
+            <InstructorInfo
+              name={instructor}
+              details="Further professional development: Yanis Marshall, Cisco Ruelas, Cris Clark, Sharon Pakir."
+            />
+          )}
+        </div>
+      )}
     </section>
   );
 };

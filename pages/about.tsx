@@ -12,10 +12,8 @@ const About = () => {
         imagePosition="center 30%"
         title="About Heels By Kristi"
         priority
-        subtitle="Heels by Kristi studio is a high heels dance studio based in
-       Oslo. Heels by Kristi was born in Norway in 2019 and has had more than
-        200 talented students. You will find this studio full of love, 
-        support and respect for each other."
+        subtitle="Heels by Kristi Studio is a high heels dance studio with locations in Oslo, Drammen, and Vilnius.
+Founded in Norway in 2019, our studio has welcomed over 200 students and continues to grow. We are proud to have recently expanded to Vilnius, Lithuania."
       />
 
       <div className={styles.container}>
@@ -25,18 +23,15 @@ const About = () => {
           imageUrl="/media/27LR.jpg"
           reverse={false}
           education="Vilnius College Dance pedagogy degree"
-          profDev="Yanis Marshall, Cisco Ruelas, Cris Clark, Sharon June, Tink McClay and others."
+          profDev="Yanis Marshall, Cisco Ruelas, Cris Clark, Sharon June, Chanelle Anthony, Malou Linders and others. "
         />
         <PersonProfile
           name="Aiste"
           description={`My biggest passion in life has always been dancing. It has always remained in my life – from being in a girl dance group throughout school years, having a possibility to work as a performer, and now embarking on my journey as a high heels dancer. I couldn’t be more excited to be teaching at Heels by Kristi and have other passionate souls dance with me!`}
           imageUrl="/media/Aistee.jpg"
           reverse={true}
-        
           profDev="Malou Linders, Cisco Ruelas, Elisa Bei, Kuba Walica, Sharon June, Blake John Wood and others."
         />
-
-   
 
         <Contacts />
       </div>

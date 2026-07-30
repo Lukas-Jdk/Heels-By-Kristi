@@ -1,17 +1,8 @@
 import Layout from "@/components/Layout/Layout";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import Hero from "@/components/Layout/Hero";
 import styles from '@/styles/success.module.css';
 
 const SuccessPage = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    const sessionId = router.query.session_id;
-    console.log("Stripe session ID:", sessionId);
-  }, [router.query]);
-
   return (
     <Layout>
       <Hero 

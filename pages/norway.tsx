@@ -1,10 +1,12 @@
-import styles from "../styles/booking.module.css";
-import Hero from "../components/Layout/Hero";
-import CityCard from "../components/Booking/CityCard";
-import { City } from "../components/types/booking";
+import Head from "next/head";
 import Layout from "../components/Layout/Layout";
+import Hero from "../components/Layout/Hero";
+import ScheduleSection from "@/components/Schedule/ScheduleSection";
+import BookingSection from "../components/Booking/BookingSection";
+import { City } from "../components/types/booking";
+import scheduleStyles from "../styles/schedule.module.css";
 
-const cities: City[] = [
+const norwayCities: City[] = [
   {
     name: "OSLO",
     imageUrl: "/media/Heels4.jpg",
@@ -16,7 +18,7 @@ const cities: City[] = [
         stripePriceId: "price_1Ro0sOHsJm7V7w1Yy4RZ71bp",
       },
       {
-        label: "Zero Level Beginners  Drop-in",
+        label: "Zero Level Beginners Drop-in",
         price: 300,
         stripePriceId: "price_1RqxIoHsJm7V7w1YmfTZyNfB",
       },
@@ -25,7 +27,6 @@ const cities: City[] = [
         price: 300,
         stripePriceId: "price_1RqxJoHsJm7V7w1Y0a3DGwlS",
       },
-
       {
         label: "2 clips",
         price: 580,
@@ -81,58 +82,35 @@ const cities: City[] = [
   },
 ];
 
-const BookingPage = () => {
+const NorwayPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Norway Classes – Heels by Kristi</title>
+        <meta
+          name="description"
+          content="View the Oslo and Drammen class schedules, prices, and book your Heels by Kristi classes in Norway."
+        />
+      </Head>
+
       <Hero
-        title="Courses From Heels By Kristi"
-        subtitle="Please select the available courses that suit you best."
+        title="Norway"
+        subtitle="View class schedules and book your classes in Oslo and Drammen."
         imageSrc="/media/20LR.jpg"
         imagePosition="center 30%"
-        quality={100}
         priority
       />
 
-      <main className={styles.container}>
-        <section className={styles.cards}>
-          {cities.map((c) => (
-            <CityCard key={c.name} city={c} />
-          ))}
+      <main>
+       <h1 className={scheduleStyles.sectionTitle}>Schedule</h1>
+        <section className={scheduleStyles.container}>
+          <ScheduleSection />
         </section>
-
-        <section className={styles.info}>
-          <p>1 clip = 1 class</p>
-
-          <p>
-            Classes must be paid for before the class begins. When purchasing a
-            drop-in class, the purchase receipt must be shown to the teacher
-            before the class.
-          </p>
-
-          <p>
-            Clips cannot be shared, and classes cannot be transferred to another
-            person. Classes are non-refundable in the event of force majeure –
-            please contact the studio directly.
-          </p>
-
-          <p>Validity is calculated from the date of purchase:</p>
-
-          <p>
-            Drop-in (1 class): valid for 14 days
-            <br />
-            2 clips: valid for 21 days
-            <br />
-            5 clips: valid for 45 days
-            <br />
-            10 clips: valid for 95 days
-            <br />
-            15 clips: valid for 145 days
-          </p>
-
-          <p>Each clip represents one dance class!</p>
-        </section>
+       <h1 className={scheduleStyles.sectionTitle}>Booking</h1>
+        <BookingSection cities={norwayCities} />
       </main>
     </Layout>
   );
 };
-export default BookingPage;
+
+export default NorwayPage;

@@ -9,7 +9,7 @@ const Events = () => {
       <Hero
         title="Events"
         subtitle="Our dance studio events"
-         imageSrc="/media/20LR.jpg"
+        imageSrc="/media/20LR.jpg"
         imagePosition="center 30%"
         priority
       />
@@ -21,15 +21,16 @@ const Events = () => {
             <>
               <p className={styles.eventTextInfo}>
                 High Heels class is the perfect way to celebrate your special
-                day! Heels by Kristi teachers will teach you special choreography which can be performed by all Bride team. 
-                The bride will receive special attention during the dance class and routine. You
-                will start with small warm up, later all participants will learn
-                not difficult and sexy choreography which you will perform in
-                the end of the class. You will have possibility to record your
-                class and take time for photos.
+                day! Heels by Kristi teachers will teach you special
+                choreography which can be performed by all Bride team. The bride
+                will receive special attention during the dance class and
+                routine. You will start with small warm up, later all
+                participants will learn not difficult and sexy choreography
+                which you will perform in the end of the class. You will have
+                possibility to record your class and take time for photos.
               </p>
               <p className={styles.prices}>
-                <strong>Prices:</strong>
+                <strong>Norway:</strong>
                 <br />
                 <strong>3500 NOK</strong> – 75 min, 10 participants or less
                 <br />
@@ -37,6 +38,12 @@ const Events = () => {
                 <br />
                 <strong>5000 NOK</strong> – 90 min, 21 participants or more
                 <br />
+                <br />
+                <strong>Lithuania:</strong>
+                <br />
+                <strong>200€</strong> – 60 min, 10 participants or less
+                <br />
+                <strong>250€</strong> – 90 min, 10 participants or less
               </p>
             </>
           }
@@ -55,14 +62,14 @@ const Events = () => {
                 Heels by Kristi portfolio
               </p>
               <p className={styles.prices}>
-                <strong>Prices:</strong>
+                <strong>Norway:</strong>
                 <br />
                 <strong>1000 NOK</strong> – 60 min, 1 participant
                 <br />
-                <strong>900 NOK</strong> – 60 min, 2 participants
                 <br />
-                <strong>1000 NOK</strong> – 60 min , 3/4 participants
+                <strong>Lithuania:</strong>
                 <br />
+                <strong>70€</strong> – 60 min, 1 participant
               </p>
             </>
           }

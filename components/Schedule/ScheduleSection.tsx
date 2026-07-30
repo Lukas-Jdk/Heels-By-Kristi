@@ -4,27 +4,27 @@ import ScheduleCity from "./ScheduleCity";
 const osloSchedule = [
   {
     day: "MONDAYS",
-    level: "Basic Beginners",
+    level: "Zero Level Beginners",
     time: "17.30 - 19.00",
-    teacher: "Kristina",
+    teacher: "Aiste",
   },
 ];
 const osloScheduleInter = [
   {
     day: "MONDAYS",
-    level: "Intermediate Beginners",
+    level: "Open Level",
     time: "19.00 - 20.30",
-    teacher: "Kristina",
+    teacher: "Aiste",
   },
 ];
-const osloScheduWednesdays = [
-  {
-    day: "WEDNESDAYS ",
-    level: "Zero Level Beginners",
-    time: "17.30 - 19.00",
-    teacher: "Kristina",
-  },
-];
+// const osloScheduWednesdays = [
+//   {
+//     day: "WEDNESDAYS ",
+//     level: "Zero Level Beginners",
+//     time: "17.30 - 19.00",
+//     teacher: "Kristina",
+//   },
+// ];
 const drammenSchedule = [
   {
     day: "TUESDAYS",
@@ -43,7 +43,7 @@ const ScheduleSection = () => {
           schedule={[
             ...osloSchedule,
             ...osloScheduleInter,
-            ...osloScheduWednesdays,
+            // ...osloScheduWednesdays,
           ]}
           imageUrl= "/media/Heels4.jpg"
           imagePosition="center 45%"

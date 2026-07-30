@@ -9,8 +9,9 @@ const FooterLinks = () => {
            <ul>
       <li><Link href="/">Home</Link></li>
       <li><Link href="/about">About Us</Link></li>
-      <li><Link href="/schedule">Schedule</Link></li>
-      <li><Link href="/booking">Booking & Prices</Link></li>
+      <li><Link href="/norway">Norway</Link></li>
+      <li><Link href="/lithuania">Lithuania</Link></li>
+      <li><Link href="/our-classes">Our Classes</Link></li>
       <li><Link href="/contact">Contact Us</Link></li>
       <li><Link href="/events">Events</Link></li>
       <li><Link href="/gallery">Gallery</Link></li>

@@ -1,25 +1,35 @@
 import styles from './ClassSection.module.css';
-import ClassCard from './ClassCard';
+import Image from 'next/image';
 
 const ClassSection = () => {
-  return(
+  return (
     <section className={styles.wrapper}>
-      <ClassCard 
-      title= "Basic Beginners"
-      text= "This class is perfect for those who never danced with High Heels but always dreamed about it! During the class you will learn everything about posture, balance and turns in Heels."
-      link= "/schedule#basic-beginners-description"
-      
-      />
-
-      <ClassCard 
-      title= "Intermediate Beginners"
-      text= "This class is suitable for someone who has some dance experience. In this class you will learn different types of choreographies and will also focus on coordination skills, technique, posture and floor work."
-      link= "/schedule#intermediate-beginners-description"
-    
-      />
-
+      <div className={styles.banner}>
+        <Image
+          src="/media/heels-workshop-neidi-kull.webp"
+          alt="Heels Workshop with Neidi Kull from Estonia"
+          fill
+          className={styles.image}
+          priority
+        />
+        <div className={styles.overlay} />
+        <div className={styles.textWrap}>
+          <div className={styles.text}>
+            <p className={styles.title}>
+              HEELS WORKSHOP WITH NEIDI KULL FROM ESTONIA!
+            </p>
+            <p className={styles.date}>September 12th</p>
+            <div className={styles.divider} />
+            <p className={styles.detail}>Time - 14.00-16.00</p>
+            <p className={styles.detail}>
+              Location - Eikenga 11, Oslo. Studio Heels by Kristi
+            </p>
+            <p className={styles.detail}>All info in our Instagram profile!</p>
+          </div>
+        </div>
+      </div>
     </section>
-  )
+  );
 };
 
 export default ClassSection;

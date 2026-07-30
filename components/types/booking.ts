@@ -5,7 +5,7 @@ export type PriceOption = {
 };
 
 export type City = {
-  name: "OSLO" | "DRAMMEN";
+  name: "OSLO" | "DRAMMEN" | "VILNIUS";
   imageUrl: string;
   options: PriceOption[];
   imagePosition?: string;

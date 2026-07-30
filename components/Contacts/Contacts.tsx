@@ -23,14 +23,9 @@ const Contacts = () => {
               <strong>Car:</strong> Free parking from 16:00 to 22:00, and on
               weekends, in spaces marked with: Fiberworks, Hagen VVS,
               Rørentreprenørenes Felleskontor, Kaph Entreprenør, Pioneer, Paid
-              Guest Parking, marked with &quot;Mot Avgift...&quot;  (Subject to fee...)
+              Guest Parking, marked with &quot;Mot Avgift...&quot;
             </p>
-            <p>
-              <strong>Bus:</strong> 21 bus and a 5-minute walk.
-            </p>
-            <p>
-              <strong>Subway:</strong> subway stop Hasle and a 5-minute walk.
-            </p>
+          
          
            
           </div>
@@ -52,7 +47,8 @@ const Contacts = () => {
           </div>
           <div>
             <h4>CALL US</h4>
-            <p><a href="tel:+4741275229" className={styles.link}>+47 412 75 229</a></p>
+            <p><a href="tel:+4741275229" className={styles.link}>+47 412 75 229</a> (Norway)</p>
+            <p><a href="tel:+37060494611" className={styles.link}>+370 604 94 611</a> (Lithuania)</p>
           </div>
         </div>
       </div>

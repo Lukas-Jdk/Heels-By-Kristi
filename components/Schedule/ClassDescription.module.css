@@ -1,14 +1,12 @@
-
 .block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row; 
-  margin: 6rem 0 ;
+  flex-direction: row;
+  margin: 6rem 0;
   position: relative;
   scroll-margin-top: 120px; /* kad header neuždengtų */
   gap: 2rem;
- 
 }
 
 .right {
@@ -42,17 +40,17 @@
 
 .footer {
   width: 550px;
- display: flex;
- flex-direction: column;
- gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .price {
   width: 113px;
   height: 55px;
-  display: inline-flex;              
-  justify-content: center;          
-  align-items: center;              
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   border: 1px solid var(--orange);
   background-color: var(--orange);
@@ -72,9 +70,20 @@
   border-bottom: 1px solid gray;
 }
 
- @media (max-width: 768px) {
+.titleWrapper {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.titleWrapper .title {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
   .block {
     width: 100%;
     flex-wrap: wrap;
   }
- }
+}
