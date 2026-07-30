@@ -13,7 +13,7 @@ type Props = {
   quality?: number;
   imagePosition?: string;
    priority?: boolean;
-   
+
 };
 
 const Hero = ({
@@ -49,11 +49,6 @@ const Hero = ({
           aria-hidden="true"
 
         >
-          <source
-            src={videoSrc.replace(/\.mp4$/, "_mobile.mp4")}
-            media="(max-width: 768px)"
-            type="video/mp4"
-          />
           <source src={videoSrc} type="video/mp4" />
             {/* <track
       src="/captions.vtt"

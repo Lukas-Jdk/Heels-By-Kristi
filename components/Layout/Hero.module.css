@@ -46,13 +46,6 @@
   z-index: -1;
 }
 
-@media (max-width: 768px) {
-  .bgVideo {
-    object-fit: contain;
-    background-color: #000;
-  }
-}
-
 
 
 .overlay {
