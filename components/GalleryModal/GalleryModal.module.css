@@ -33,7 +33,7 @@
   position: absolute;
   background: none;
   border: none;
-  color: white;
+  color: var(--white);
   font-size: 2.5rem;
   cursor: pointer;
   z-index: 1001;

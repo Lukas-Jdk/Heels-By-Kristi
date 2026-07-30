@@ -1,25 +1,43 @@
 :root {
+  /* Brand palette */
+  --primary: #4b1f3d;
+  --accent: #d8a7b1;
+  --accent-rgb: 216, 167, 177;
+  --background: #faf7f8;
+  --text: #3b2f35;
+  --hover: #6a3154;
+
+  /* Legacy aliases – every existing var(--white)/var(--black)/var(--orange)
+     usage across the codebase picks up the refreshed palette automatically */
   --white: #ffffff;
-  --black: #171717;
-  --orange: #e0a473c7;
-  --font-primary: 'Poppins', Arial, Helvetica, sans-serif;
-  --font-second: 'Roboto', Arial, Helvetica, sans-serif;
+  --black: var(--text);
+  --orange: var(--accent);
+
+  /* Neutral UI tones, derived from the brand ink color instead of plain gray */
+  --muted: rgba(59, 47, 53, 0.55);
+  --border: rgba(59, 47, 53, 0.15);
+  --shadow: rgba(59, 47, 53, 0.12);
+  --error: #c0392b;
+
+  --font-primary: "Playfair Display", Georgia, serif;
+  --font-second: "Montserrat", Arial, Helvetica, sans-serif;
+  --font-accent: "Kristi", cursive;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
- 
 }
 
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
 
 .container {
- max-width: 1250px;
+  max-width: 1250px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
- 
 }
-
-

@@ -31,6 +31,8 @@
   font-size: 3.6rem;
   font-weight: 600;
   line-height: 68px;
+  color: var(--accent);
+
 }
 
 .aboutUsInfo p {
@@ -41,6 +43,7 @@
   line-height: 34px;
   max-width: 575px;
   text-align: left;
+  color: var(--primary);
 }
 
 
@@ -52,9 +55,9 @@
   text-align: center;
   border-radius: 50px;
   margin-top: 2rem;
-  background-color: var(--orange);
-  color: var(--white);
-  border: 1px solid var(--orange);
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--accent);
   font-family: var(--font-primary);
   font-size: 0.9rem;
   font-weight: 600;
@@ -65,8 +68,8 @@
 }
 
 .readMoreButton:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: var(--hover);
+  color: var(--white);
 }
 
 @media (max-width: 900px) {

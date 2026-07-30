@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;  
   justify-content: flex-start;
-  color: #fff;
+  color: var(--white);
   
 }
 .full {
@@ -21,7 +21,7 @@
 }
 
 .noMedia {
-  background-color: #000;
+  background-color: var(--primary);
 }
 
  .hasOverlay{

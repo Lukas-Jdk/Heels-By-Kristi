@@ -33,16 +33,16 @@
 
 .bookingBtn {
   padding: 1.3em 2.5em;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid var(--white);
   border-radius: 35px;
-  color: white;
+  color: var(--white);
   transition: 0.3s ease;
   font-family: var(--font-primary);
 }
 
-.bookingBtn:hover { 
-  background-color: var(--white);
-  color: var(--orange);
+.bookingBtn:hover {
+  background-color: var(--hover);
+  color: var(--white);
 }
 
 @media (max-width: 728px){

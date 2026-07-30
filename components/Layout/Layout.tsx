@@ -25,8 +25,10 @@ const Layout = ({ children }: Props) => {
 
   return (
     <div className={styles.layout}>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+      <div className={styles.headerFonts}>
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+      </div>
       <main className={styles.content}>
         {children}
       </main>

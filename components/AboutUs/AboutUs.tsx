@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className={styles.aboutUsContainer}>
       <div className={styles.aboutUsImage}>
-        <Image src="/media/30LR.jpg" alt="About Us" width={600} height={400} />
+        <Image src="/media/30LR.jpeg" alt="About Us" width={600} height={400} />
       </div>
       <div className={styles.aboutUsInfo}>
         <h1>About Us</h1>

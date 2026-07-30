@@ -13,7 +13,7 @@ gap: 2rem;
 }
 
 .iconCalandar {
-  color: white;
+  color: var(--white);
   margin-bottom: 0.5rem;
 }
 
@@ -22,8 +22,8 @@ gap: 2rem;
   font-family: var(--font-primary);
   font-size: 0.94em;
   padding: 0 3rem;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
 }
 
 .iconUser {
@@ -40,15 +40,15 @@ gap: 2rem;
 }
 
 .iconPin {
-  color: white;
+  color: var(--white);
   margin-bottom: 0.5rem;
 }
 
 
 
 .enrollBtn:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: var(--hover);
+  color: var(--white);
 }
 
 @media (max-width: 510px) {

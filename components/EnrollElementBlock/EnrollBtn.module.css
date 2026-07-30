@@ -1,6 +1,6 @@
 .enrollBtn {
   background-color: var(--orange);
-  color: white;
+  color: var(--primary);
   font-weight: 600;
   padding: 0.9rem 3.8rem;
   border-radius: 40px;
@@ -16,6 +16,6 @@
   
 }
 .enrollBtn:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: var(--hover);
+  color: var(--white);
 }

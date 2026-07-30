@@ -18,12 +18,12 @@
 
 .zeroIntro h1 {
   font-size: 3.2rem;
-  color: var(--white);
+  color: var(--primary);
   font-family: var(--font-primary);
 }
 
 .zeroIntro h2 {
-  color: var(--black);
+  color: var(--hover);
   font-family: var(--font-primary);
 }
 
@@ -36,7 +36,7 @@
 
 .zeroIntro p {
   font-family: var(--font-second);
-  color: var(--black);
+  color: var(--primary);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -53,7 +53,7 @@
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 3.3rem;
-  color: var(--white);
+  color: var(--primary);
 }
 
 .zeroFocus ul {
@@ -64,27 +64,31 @@
   list-style: none;
   font-weight: 500;
   font-size: 1.1rem;
+  color:var(--black)
 }
 
 .zeroFocus p {
   font-family: var(--font-primary);
-  font-weight: 500;
+  font-weight: 800;
   padding-top: 1rem;
+  color:var(--primary)
+  
 }
 .zeroBtn {
   margin-top: 2rem;
   padding: 1rem 3.5rem;
-  border: 1px solid var(--white);
+  border: 1px solid var(--primary);
   border-radius: 35px;
   color: white;
+  background-color: var(--primary);
   font-family: var(--font-primary);
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 1px;
 }
 .zeroBtn:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: var(--hover);
+  color: var(--white);
 }
 .zeroFocus a {
   text-decoration: none;

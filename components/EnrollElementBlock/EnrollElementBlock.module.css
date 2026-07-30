@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: black;
+  background-color: var(--primary);
  padding-bottom: 5rem;
 }
 .container {
@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
  align-items: center;
-  color: white;
+  color: var(--white);
   padding: 0 1rem;
 
 }

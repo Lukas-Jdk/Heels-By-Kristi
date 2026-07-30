@@ -2,10 +2,10 @@
   width: 100%;
   border-radius: 15px;
   padding: 0.6rem;
-  border: 1px solid rgb(185, 184, 184);
+  border: 1px solid var(--border);
   font-family: var(--font-primary);
   font-size: 1rem;
-  background-color: white;
+  background-color: var(--background);
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -21,9 +21,9 @@
   width: 100%;
   padding: 0.6rem;
   border-radius: 15px;
-  border: 1px solid var(--orange);
-  background-color: var(--orange);
-  color: white;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
   transition: 0.3s ease-in-out;
   font-weight: bold;
   font-family: var(--font-primary);
@@ -31,8 +31,8 @@
 }
 
 .buyButton:hover {
-  background-color: white;
-  color: var(--orange);
+  background-color: var(--hover);
+  color: var(--white);
 }
 
 .buyButton:disabled {
@@ -42,6 +42,6 @@
 
 .error {
   margin-top: 0.5rem;
-  color: #c0392b;
+  color: var(--error);
   font-size: 0.85rem;
 }

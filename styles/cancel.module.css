@@ -21,9 +21,9 @@
 
 .tryAgainBtn {
 text-decoration: none;
-background-color: var(--orange);
+background-color: var(--primary);
 padding: 0.7rem 3rem;
-color: white;
+color: var(--white);
 border-radius: 25px;
 font-weight: 600;
 font-family: var(--font-primary);

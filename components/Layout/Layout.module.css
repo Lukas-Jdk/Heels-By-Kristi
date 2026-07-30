@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.headerFonts {
+  --font-primary: var(--font-header);
+}
+
 .content {
   flex: 1;
 }

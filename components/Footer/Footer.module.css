@@ -1,5 +1,5 @@
 .footerWrapper {
-  background-color: black;
+  background-color: var(--primary);
   background-size: cover;
   background-position: center 20%;
   display: flex;

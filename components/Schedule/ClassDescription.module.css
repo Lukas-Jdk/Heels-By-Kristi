@@ -54,7 +54,7 @@
   border-radius: 30px;
   border: 1px solid var(--orange);
   background-color: var(--orange);
-  color: white;
+  color: var(--primary);
   font-family: var(--font-primary);
   font-weight: bold;
   text-align: center;
@@ -62,12 +62,12 @@
   transition: 0.3s ease;
 }
 .price:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: var(--hover);
+  color: var(--white);
 }
 
 .bottomLine {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--border);
 }
 
 .titleWrapper {

@@ -37,7 +37,7 @@
 
 .iconFb {
   font-size: 1.1rem;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   background-color: blue;
   border-radius: 50%;
   width: 20px;
