@@ -3,6 +3,10 @@ import classNames from "classnames";
 import Image from "next/image";
 import React from "react";
 
+// Bump this whenever hero-poster.jpg or a videoSrc file is replaced in place,
+// so browsers/mobile caches treat it as a brand-new URL instead of serving stale media.
+const ASSET_VERSION = "2";
+
 type Props = {
   title: string;
   subtitle?: string;
@@ -45,11 +49,11 @@ const Hero = ({
           loop
           playsInline
           preload="metadata"
-          poster="/media/hero-poster.jpg"
+          poster={`/media/hero-poster.jpg?v=${ASSET_VERSION}`}
           aria-hidden="true"
 
         >
-          <source src={videoSrc} type="video/mp4" />
+          <source src={`${videoSrc}?v=${ASSET_VERSION}`} type="video/mp4" />
             {/* <track
       src="/captions.vtt"
       kind="captions"
