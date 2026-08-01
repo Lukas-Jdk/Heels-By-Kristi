@@ -40,14 +40,14 @@ const HomePage = () => {
 
       <div className={styles.container}>
         <ButtonGroup />
-     
+      <ClassSection />
         <AboutUs />
       </div>
 
       <EnrrollElementBlock />
       
       <ZeroLevel />
-         <ClassSection />
+        
     </Layout>
   );
 };

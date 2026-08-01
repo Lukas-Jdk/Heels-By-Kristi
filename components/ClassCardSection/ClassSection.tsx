@@ -4,6 +4,7 @@ import Image from 'next/image';
 const ClassSection = () => {
   return (
     <section className={styles.wrapper}>
+       <h1 className={styles.title1}>Workshop</h1>
       <div className={styles.banner}>
         <Image
           src="/media/heels-workshop-neidi-kull.webp"
@@ -13,6 +14,7 @@ const ClassSection = () => {
           priority
         />
         <div className={styles.overlay} />
+       
         <div className={styles.textWrap}>
           <div className={styles.text}>
             <p className={styles.title}>

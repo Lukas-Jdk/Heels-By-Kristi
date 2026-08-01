@@ -9,21 +9,17 @@ import scheduleStyles from "../styles/schedule.module.css";
 const norwayCities: City[] = [
   {
     name: "OSLO",
-    imageUrl: "/media/Heels4.jpg",
-    imagePosition: "center 30%",
+    imageUrl: "/media/aiste2.webp",
+    imagePosition: "center 75%",
     options: [
-      {
-        label: "Basic Beginner Drop-in",
-        price: 300,
-        stripePriceId: "price_1Ro0sOHsJm7V7w1Yy4RZ71bp",
-      },
+
       {
         label: "Zero Level Beginners Drop-in",
         price: 300,
         stripePriceId: "price_1RqxIoHsJm7V7w1YmfTZyNfB",
       },
       {
-        label: "Intermediate Beginners Drop-in",
+        label: "Open Level Drop-in",
         price: 300,
         stripePriceId: "price_1RqxJoHsJm7V7w1Y0a3DGwlS",
       },
@@ -51,10 +47,11 @@ const norwayCities: City[] = [
   },
   {
     name: "DRAMMEN",
-    imageUrl: "/media/aiste2.jpg",
+    imageUrl: "/media/aiste1.webp",
+    imagePosition: "center 25%",
     options: [
       {
-        label: "Basic Beginners Drop-in",
+        label: "Zero Level Beginners Drop-in",
         price: 270,
         stripePriceId: "price_1RqxPNHsJm7V7w1Y1S9ejKVG",
       },

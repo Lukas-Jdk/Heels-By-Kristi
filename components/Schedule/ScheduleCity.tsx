@@ -1,6 +1,5 @@
 import styles from "./ScheduleCity.module.css";
 import ScheduleItem from "./ScheduleItem";
-import Image from "next/image";
 
 type ScheduleItemData = {
   day: string;
@@ -16,21 +15,10 @@ type CityScheduleProps = {
   imagePosition?: string;
 };
 
-const CitySchedule = ({ city, schedule, imageUrl, imagePosition = "center" }: CityScheduleProps) => {
+const CitySchedule = ({ city, schedule }: CityScheduleProps) => {
   return (
     <div className={styles.cityWrapper}>
       <div className={styles.header}>
-        <Image
-          className={styles.image}
-          src={imageUrl}
-          alt={`${city} Schedule`}
-          width={1000}
-          height={720}
-          
-          priority
-       
-          style={{ objectPosition: imagePosition }}
-        />
         <div className={styles.title}>
           <span>{city}</span>
           <h2>Schedule</h2>

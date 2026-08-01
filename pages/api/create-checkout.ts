@@ -20,11 +20,14 @@ const productNames: Record<string, string> = {
   "price_1RqxLVHsJm7V7w1YfSFj6zEv": "5 clips - OSLO",
   "price_1RqxNFHsJm7V7w1YVaPFKDmp": "10 clips - OSLO",
   "price_1RqxOUHsJm7V7w1YC1uxaPvj": "15 clips - OSLO",
-  "price_1RqxPNHsJm7V7w1Y1S9ejKVG": "Basic Beginner Drop-in - DRAMMEN",
+  "price_1RqxPNHsJm7V7w1Y1S9ejKVG": "Zero Level Beginners Drop-in - DRAMMEN",
   "price_1SD0cbHsJm7V7w1YGcARHezC": "2 clips - DRAMMEN",
   "price_1RqxReHsJm7V7w1YpfpKX55Q": "5 clips - DRAMMEN",
   "price_1RqxSTHsJm7V7w1Y0kIC3maa": "10 clips - DRAMMEN",
   "price_1RqxT1HsJm7V7w1YbVraaLbm": "15 clips - DRAMMEN",
+  "price_1TzfavHsJm7V7w1YjgokDKPc": "Zero Level Beginners Drop-in - VILNIUS",
+  "price_1TzfcPHsJm7V7w1YIetoVDxB": "5 clips - VILNIUS",
+  "price_1Tzfd4HsJm7V7w1YHtyuliA4": "10 clips - VILNIUS",
 };
 
 function getProductNameFromPrice(priceId: string): string {

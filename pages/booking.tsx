@@ -11,21 +11,10 @@ const cities: City[] = [
     imagePosition: "center 30%",
     options: [
       {
-        label: "Basic Beginner Drop-in",
-        price: 300,
-        stripePriceId: "price_1Ro0sOHsJm7V7w1Yy4RZ71bp",
-      },
-      {
         label: "Zero Level Beginners  Drop-in",
         price: 300,
         stripePriceId: "price_1RqxIoHsJm7V7w1YmfTZyNfB",
       },
-      {
-        label: "Intermediate Beginners Drop-in",
-        price: 300,
-        stripePriceId: "price_1RqxJoHsJm7V7w1Y0a3DGwlS",
-      },
-
       {
         label: "2 clips",
         price: 580,
@@ -53,7 +42,7 @@ const cities: City[] = [
     imageUrl: "/media/aiste2.jpg",
     options: [
       {
-        label: "Basic Beginners Drop-in",
+        label: "Zero Level Beginners Drop-in",
         price: 270,
         stripePriceId: "price_1RqxPNHsJm7V7w1Y1S9ejKVG",
       },

@@ -28,7 +28,7 @@ const osloScheduleInter = [
 const drammenSchedule = [
   {
     day: "TUESDAYS",
-    level: "Basic Beginners",
+    level: "Zero Level Beginners",
     time: "19.30 - 20.45",
     teacher: "Aiste",
   },

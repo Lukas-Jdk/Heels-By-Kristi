@@ -9,11 +9,12 @@ const CityCard = ({city}: Props) => (
 
   <article className={styles.card}>
      <div className={styles.imageWrap}>
-    <Image 
-      src={city.imageUrl} 
-      alt={city.name} 
-      fill 
+    <Image
+      src={city.imageUrl}
+      alt={city.name}
+      fill
       className={styles.image}
+      style={{ objectPosition: city.imagePosition || "center" }}
       priority
     />
     <h2 className={styles.city}>{city.name}</h2>

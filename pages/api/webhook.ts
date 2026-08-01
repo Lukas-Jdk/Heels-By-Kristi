@@ -46,6 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const customerEmail = session.customer_details?.email;
     const amountTotal = (session.amount_total || 0) / 100;
+    const currency = (session.currency || "").toUpperCase();
     const productName = session.metadata?.product_name || "Unknown product";
 
     try {
@@ -57,7 +58,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           <h2>New Purchase Received</h2>
           <p><strong>Customer Email:</strong> ${customerEmail}</p>
           <p><strong>Product:</strong> ${productName}</p>
-          <p><strong>Total Paid:</strong> ${amountTotal} NOK</p>
+          <p><strong>Total Paid:</strong> ${amountTotal} ${currency}</p>
         `,
       });
     } catch (e) {
@@ -73,7 +74,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           html: `
             <h2>Thank you for your purchase!</h2>
             <p>You bought: <strong>${productName}</strong></p>
-            <p>Amount paid: <strong>${amountTotal} NOK</strong></p>
+            <p>Amount paid: <strong>${amountTotal} ${currency}</strong></p>
             <p>If you have any questions, just reply to this email.</p>
           `,
         });

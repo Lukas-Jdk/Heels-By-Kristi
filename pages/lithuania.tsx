@@ -19,43 +19,26 @@ const vilniusSchedule = [
 const lithuaniaCities: City[] = [
   {
     name: "VILNIUS",
-    imageUrl: "/media/Heels4.jpg",
+    imageUrl: "/media/kristina1.jpeg",
     imagePosition: "center 30%",
     options: [
       {
-        label: "Basic Beginner Drop-in",
-        price: 300,
-        stripePriceId: "price_placeholder_1",
-      },
-      {
-        label: "Zero Level Beginners Drop-in",
-        price: 300,
-        stripePriceId: "price_placeholder_2",
-      },
-      {
-        label: "Intermediate Beginners Drop-in",
-        price: 300,
-        stripePriceId: "price_placeholder_3",
-      },
-      {
-        label: "2 clips",
-        price: 580,
-        stripePriceId: "price_placeholder_4",
+        label: "Open Level Drop-in",
+        price: 20,
+        currency: "€",
+        stripePriceId: "price_1TzfavHsJm7V7w1YjgokDKPc",
       },
       {
         label: "5 clips",
-        price: 1350,
-        stripePriceId: "price_placeholder_5",
+        price: 95,
+        currency: "€",
+        stripePriceId: "price_1TzfcPHsJm7V7w1YIetoVDxB",
       },
       {
         label: "10 clips",
-        price: 2600,
-        stripePriceId: "price_placeholder_6",
-      },
-      {
-        label: "15 clips",
-        price: 3650,
-        stripePriceId: "price_placeholder_7",
+        price: 179,
+        currency: "€",
+        stripePriceId: "price_1Tzfd4HsJm7V7w1YHtyuliA4",
       },
     ],
   },
@@ -120,13 +103,9 @@ const LithuaniaPage = () => {
             <p>
               Drop-in (1 class): valid for 14 days
               <br />
-              2 clips: valid for 21 days
-              <br />
               5 clips: valid for 45 days
               <br />
               10 clips: valid for 95 days
-              <br />
-              15 clips: valid for 145 days
             </p>
 
             <p>Each clip represents one dance class!</p>

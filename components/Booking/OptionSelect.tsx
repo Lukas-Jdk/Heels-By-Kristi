@@ -42,7 +42,7 @@ const OptionSelect = ({ options }: Props) => {
         </option>
         {options.map((opt) => (
           <option key={opt.stripePriceId} value={opt.stripePriceId}>
-            {opt.label} - {opt.price} kr
+            {opt.label} - {opt.price} {opt.currency ?? "kr"}
           </option>
         ))}
       </select>
