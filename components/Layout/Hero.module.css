@@ -64,7 +64,7 @@
 
 .content h1 {
   font-family: var(--font-primary);
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 6vw, 3.5rem);
   max-width: 580px;
   font-weight: 600;
   line-height: 1.2;
@@ -82,12 +82,6 @@
   font-weight: 300;
   margin: 0;
   font-weight: 300;
-}
-
-@media (max-width: 1200px) {
-.content h1 {
-    font-size: 2.95rem;
-  }
 }
 
 @media (max-width: 768px) {
