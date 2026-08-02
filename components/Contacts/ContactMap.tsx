@@ -42,7 +42,7 @@ const ContactMap = () => {
           ></iframe>
         </div>
 
-        <h1 className={styles.mapVilniusText}>Vilnius</h1>
+        <h1 className={styles.mapVilniusText}>VILNIUS</h1>
         <p>
           <strong>Address:</strong> Konstitucijos pr. 12, Vilnius, 09308
           Lithuania
