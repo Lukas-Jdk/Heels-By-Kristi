@@ -5,7 +5,7 @@ import React from "react";
 
 // Bump this whenever hero-poster.jpg or a videoSrc file is replaced in place,
 // so browsers/mobile caches treat it as a brand-new URL instead of serving stale media.
-const ASSET_VERSION = "2";
+const ASSET_VERSION = "3";
 
 type Props = {
   title: string;

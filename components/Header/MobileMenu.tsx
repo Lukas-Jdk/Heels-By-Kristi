@@ -16,7 +16,7 @@ const MobileMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
       <div className={styles.logo}>
         <Link href="/">
           <Image
-            src="/media/logoWhite.png"
+            src="/media/logoAccentMenu.png"
             alt="Heels By Kristi Logo"
             width={150}
             height={100}
