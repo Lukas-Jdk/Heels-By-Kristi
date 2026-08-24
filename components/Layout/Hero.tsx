@@ -17,6 +17,8 @@ type Props = {
   quality?: number;
   imagePosition?: string;
    priority?: boolean;
+  centered?: boolean;
+  children?: React.ReactNode;
 
 };
 
@@ -30,12 +32,15 @@ const Hero = ({
   quality = 100,
   imagePosition = "center",
   priority = false,
+  centered = false,
+  children,
 }: Props) => {
   const heroClass = classNames(styles.hero, {
     [styles.full]: height === "full",
     [styles.medium]: height === "medium",
     [styles.small]: height === "small",
     [styles.noMedia]: !videoSrc && !imageSrc,
+    [styles.centered]: centered,
   });
 
   return (
@@ -84,7 +89,7 @@ const Hero = ({
       <div className={styles.overlay}>
         <div className={styles.content}>
           <h1>{title}</h1>
-          {subtitle && <p>{subtitle}</p>}
+          {children ? children : subtitle && <p>{subtitle}</p>}
         </div>
       </div>
     </section>

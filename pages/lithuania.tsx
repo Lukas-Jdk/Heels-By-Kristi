@@ -6,6 +6,7 @@ import CityCard from "../components/Booking/CityCard";
 import { City } from "../components/types/booking";
 
 import bookingStyles from "../styles/booking.module.css";
+import heroStyles from "../components/Layout/Hero.module.css";
 
 const vilniusSchedule = [
   {
@@ -57,12 +58,28 @@ const LithuaniaPage = () => {
       </Head>
 
       <Hero
-        title="Lithuania"
-        subtitle="View class schedules and book your classes in Vilnius."
+        title="HEELS CLASSES IN VILNIUS"
         imageSrc="/media/20LR.jpg"
         imagePosition="center 30%"
         priority
-      />
+        centered
+      >
+        <div className={heroStyles.divider} />
+        <p>
+          No matter if it&apos;s your first time in heels or you have dance
+          experience – this is your space to grow, learn and enjoy movement.
+          <br />
+          <strong>Join Heels by Kristi in Vilnius.</strong>
+        </p>
+        <div className={heroStyles.divider} />
+        <p>
+          Nesvarbu, ar tai tavo pirmieji žingsniai su aukštakulniais, ar jau
+          turi šokio patirties – čia rasi vietą augti, mokytis ir mėgautis
+          judesiu.
+          <br />
+          <strong>Prisijunk prie Heels by Kristi Vilniuje.</strong>
+        </p>
+      </Hero>
 
       <main>
         <section className={bookingStyles.lithuaniaGrid}>
