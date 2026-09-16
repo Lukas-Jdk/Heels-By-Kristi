@@ -11,7 +11,7 @@ import heroStyles from "../components/Layout/Hero.module.css";
 const vilniusSchedule = [
   {
     day: "MONDAYS",
-    level: "Open Level",
+    level: "Begginer Level",
     time: "19.45 - 21.15",
     teacher: "Kristina",
   },
@@ -24,7 +24,7 @@ const lithuaniaCities: City[] = [
     imagePosition: "center 30%",
     options: [
       {
-        label: "Open Level Drop-in",
+        label: "Begginers Drop-in",
         price: 20,
         currency: "€",
         stripePriceId: "price_1TzfavHsJm7V7w1YjgokDKPc",

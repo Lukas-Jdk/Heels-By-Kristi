@@ -7,11 +7,11 @@ const ZeroLevel = () => {
       <div className={styles.zeroLevelContainer}>
         <div className={styles.zeroIntro}>
           <h1>NEW ’26 FALL SEASON CLASS</h1>
-          <h2>NEW CLASS: OPEN LEVEL – HIGH HEELS (VILNIUS)</h2>
+          <h2>NEW CLASS: BEGGINER LEVEL – HIGH HEELS (VILNIUS)</h2>
           <h3>Mondays | 19:45–21:15</h3>
 
           <p>
-            Our Open Level class welcomes both beginners and experienced
+            This class welcomes both beginners and experienced
             dancers. Whether it’s your first time dancing in heels or you’re
             looking to refine your skills, this class is for you.
           </p>

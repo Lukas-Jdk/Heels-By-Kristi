@@ -5,7 +5,6 @@ import Hero from "../components/Layout/Hero";
 import dynamic from "next/dynamic";
 
 const ButtonGroup        = dynamic(() => import("../components/ButtonGroup/ButtonGroup"), { ssr:false });
-const ClassSection       = dynamic(() => import("../components/ClassCardSection/ClassSection"), { ssr:false });
 const AboutUs            = dynamic(() => import("@/components/AboutUs/AboutUs"), { ssr:false });
 const EnrrollElementBlock= dynamic(() => import("@/components/EnrollElementBlock/EnrollElementBlock"), { ssr:false });
 const ZeroLevel          = dynamic(() => import("@/components/ZeroLevel/ZeroLevel"), { ssr:false });
@@ -40,7 +39,6 @@ const HomePage = () => {
 
       <div className={styles.container}>
         <ButtonGroup />
-      <ClassSection />
         <AboutUs />
       </div>
 
