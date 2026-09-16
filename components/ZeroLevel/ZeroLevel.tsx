@@ -7,7 +7,7 @@ const ZeroLevel = () => {
       <div className={styles.zeroLevelContainer}>
         <div className={styles.zeroIntro}>
           <h1>NEW ’26 FALL SEASON CLASS</h1>
-          <h2>NEW CLASS: BEGGINER LEVEL – HIGH HEELS (VILNIUS)</h2>
+          <h2>NEW CLASS: BEGGINERS LEVEL – HIGH HEELS (VILNIUS)</h2>
           <h3>Mondays | 19:45–21:15</h3>
 
           <p>

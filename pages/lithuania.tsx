@@ -11,7 +11,7 @@ import heroStyles from "../components/Layout/Hero.module.css";
 const vilniusSchedule = [
   {
     day: "MONDAYS",
-    level: "Begginer Level",
+    level: "Begginers Level",
     time: "19.45 - 21.15",
     teacher: "Kristina",
   },
