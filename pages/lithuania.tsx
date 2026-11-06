@@ -15,6 +15,12 @@ const vilniusSchedule = [
     time: "19.45 - 21.15",
     teacher: "Kristina",
   },
+  {
+    day: "WEDNESDAYS",
+    level: "Begginers Level",
+    time: "19.45 - 21.15",
+    teacher: "Kristina",
+  },
 ];
 
 const lithuaniaCities: City[] = [
